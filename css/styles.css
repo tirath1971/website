@@ -1906,6 +1906,157 @@ section {
   margin-top: 6px;
 }
 
+/* ===== PRODUCT DETAIL MODAL ===== */
+.product-modal-card {
+  max-width: 980px !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.product-modal-card .modal-close {
+  background: rgba(245, 240, 230, 0.92);
+  backdrop-filter: blur(6px);
+  z-index: 5;
+}
+
+.pm-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  max-height: 90vh;
+}
+
+.pm-image-wrap {
+  position: relative;
+  background: var(--cream);
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.pm-image-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pm-content {
+  padding: 48px 44px 40px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.pm-brand {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.pm-name {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--forest);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.pm-desc {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 28px;
+}
+
+.pm-section {
+  margin-bottom: 26px;
+}
+
+.pm-section h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--sage);
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(31, 74, 61, 0.1);
+  padding-bottom: 8px;
+}
+
+.pm-section ul {
+  list-style: none;
+}
+
+.pm-section ul li {
+  padding: 7px 0 7px 22px;
+  position: relative;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.pm-section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 12px;
+  height: 1px;
+  background: var(--amber);
+}
+
+.pm-section dl {
+  display: grid;
+  grid-template-columns: minmax(120px, auto) 1fr;
+  gap: 8px 24px;
+  font-size: 14px;
+}
+
+.pm-section dt {
+  color: var(--muted);
+  font-weight: 400;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(31, 74, 61, 0.06);
+}
+
+.pm-section dd {
+  color: var(--ink);
+  font-weight: 500;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(31, 74, 61, 0.06);
+}
+
+.pm-section dl > *:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.pm-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+@media (max-width: 820px) {
+  .product-modal-card { max-height: 92vh; }
+  .pm-grid { grid-template-columns: 1fr; max-height: 92vh; }
+  .pm-image-wrap { aspect-ratio: 16 / 10; }
+  .pm-content { padding: 32px 26px 28px; max-height: none; }
+  .pm-name { font-size: 26px; }
+  .pm-section dl { grid-template-columns: 1fr; gap: 0; }
+  .pm-section dt { padding-bottom: 0; border-bottom: none; color: var(--sage); font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; }
+  .pm-section dd { margin-bottom: 8px; }
+  .pm-actions .btn { flex: 1; min-width: 0; }
+}
+
 /* ===== PROBLEM CHECKLIST inside modal ===== */
 .checklist-intro {
   font-size: 13px;
