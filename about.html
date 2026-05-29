@@ -47,12 +47,26 @@
     aspect-ratio: 4 / 5;
     background: var(--cream);
     border-radius: 14px;
-    display: grid;
-    place-items: center;
     overflow: hidden;
     box-shadow: 0 24px 56px rgba(0,0,0,0.3);
   }
+  .founder-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    z-index: 2;
+    display: block;
+  }
   .founder-monogram {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-60%);
+    text-align: center;
     font-family: 'Fraunces', serif;
     font-style: italic;
     font-weight: 500;
@@ -60,6 +74,7 @@
     line-height: 0.85;
     color: var(--forest);
     letter-spacing: -0.05em;
+    z-index: 1;
   }
   .founder-monogram-sub {
     position: absolute;
@@ -72,6 +87,7 @@
     text-transform: uppercase;
     color: var(--sage);
     font-weight: 500;
+    z-index: 1;
   }
   .founder-text {
     position: relative;
@@ -323,7 +339,7 @@
         </div>
         <div class="visit-row">
           <span class="visit-label">Phone</span>
-          <span class="visit-value">+91 88721 77341</span>
+          <span class="visit-value">+91 88721 77341<br><span style="font-size: 14px; color: var(--mint); opacity: 0.85;">Alt: +91 94179 88748</span></span>
         </div>
         <div class="visit-row">
           <span class="visit-label">Email</span>
@@ -362,6 +378,7 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+918872177341">+91 88721 77341</a></li>
+          <li><a href="tel:+919417988748">+91 94179 88748 <span style="opacity:0.6; font-size: 12px;">(alt)</span></a></li>
           <li><a href="https://wa.me/918872177341" target="_blank" rel="noopener">WhatsApp us</a></li>
           <li><a href="mailto:tirathelectronics@gmail.com">tirathelectronics@gmail.com</a></li>
           <li>Open every day · 10:00 — 20:30</li>

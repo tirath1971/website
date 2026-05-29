@@ -131,6 +131,7 @@
       const product = (data.get('product') || '').toString().trim();
       const duration = (data.get('duration') || '').toString().trim();
       const tried = (data.get('tried') || '').toString().trim();
+      const issues = data.getAll('issues').map((s) => s.toString().trim()).filter(Boolean);
 
       if (!name || !phone) {
         const target = form.querySelector('[name="name"]:invalid, [name="phone"]:invalid')
@@ -139,14 +140,27 @@
         return;
       }
 
+      // If form has a checklist, require either a tick OR text in the problem field
+      const checklist = form.querySelector('.problem-checklist');
+      if (checklist && issues.length === 0 && !problem) {
+        checklist.classList.add('error');
+        checklist.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => checklist.classList.remove('error'), 2200);
+        return;
+      }
+
       let msg = `Namaste! Main ${name} bol raha/i hoon.\n\n`;
       msg += `📞 Phone: ${phone}\n`;
       if (email) msg += `📧 Email: ${email}\n`;
       if (product) msg += `\n🔧 Product / category: ${product}`;
 
+      if (issues.length) {
+        msg += `\n\n✓ Specific issues:\n` + issues.map((i) => `  • ${i}`).join('\n');
+      }
+
       const detail = problem || query;
       if (detail) {
-        const label = problem ? 'Problem' : 'Query';
+        const label = problem ? 'Aur detail' : 'Query';
         msg += `\n\n${label}:\n${detail}`;
       }
 
@@ -171,15 +185,35 @@
   if (repairModal) {
     const modalLabel = document.getElementById('modalProductLabel');
     const modalInput = document.getElementById('modalProductInput');
+    const checklist = document.getElementById('problemChecklist');
     const closeBtn = repairModal.querySelector('.modal-close');
 
-    const openModal = (productName) => {
+    const populateChecklist = (card) => {
+      if (!checklist) return;
+      checklist.innerHTML = '';
+      const items = card.querySelectorAll('.complaint-list li');
+      items.forEach((li, i) => {
+        const text = li.textContent.trim();
+        const label = document.createElement('label');
+        label.className = 'checklist-item';
+        const safeText = text
+          .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+        label.innerHTML =
+          '<input type="checkbox" name="issues" value="' + safeText + '">' +
+          '<span class="check-mark"></span>' +
+          '<span class="check-label">' + safeText + '</span>';
+        checklist.appendChild(label);
+      });
+    };
+
+    const openModal = (productName, sourceCard) => {
       if (modalLabel) modalLabel.textContent = productName;
       if (modalInput) modalInput.value = productName;
+      if (sourceCard) populateChecklist(sourceCard);
       repairModal.classList.add('open');
       repairModal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
-      // Focus first input
       setTimeout(() => {
         const firstInput = repairModal.querySelector('input[type="text"]');
         if (firstInput) firstInput.focus();
@@ -194,13 +228,11 @@
 
     document.querySelectorAll('.js-open-repair').forEach((card) => {
       card.addEventListener('click', (e) => {
-        // Don't open if user clicked a link inside the card (none currently, but safe)
         if (e.target.closest('a')) return;
         const titleEl = card.querySelector('h3');
         const product = (titleEl && titleEl.textContent.trim()) || 'Repair';
-        openModal(product);
+        openModal(product, card);
       });
-      // Keyboard accessibility
       card.setAttribute('tabindex', '0');
       card.setAttribute('role', 'button');
       card.addEventListener('keydown', (e) => {

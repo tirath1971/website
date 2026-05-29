@@ -372,6 +372,7 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+918872177341">+91 88721 77341</a></li>
+          <li><a href="tel:+919417988748">+91 94179 88748 <span style="opacity:0.6; font-size: 12px;">(alt)</span></a></li>
           <li><a href="https://wa.me/918872177341" target="_blank" rel="noopener">WhatsApp us</a></li>
           <li><a href="mailto:tirathelectronics@gmail.com">tirathelectronics@gmail.com</a></li>
           <li>Open every day · 10:00 — 20:30</li>
@@ -416,8 +417,14 @@
       </div>
 
       <div class="form-row">
-        <label for="rf-problem">Kya problem hai? (model bhi batao)</label>
-        <textarea id="rf-problem" name="problem" placeholder="e.g. 55-inch Samsung Smart TV — picture aa rahi par sound nahi..." required></textarea>
+        <label>Common problems — jo bhi match karta hai, tick kar do</label>
+        <p class="checklist-intro">Multiple bhi tick kar sakte ho. Aur kuch ho toh neeche likh do.</p>
+        <div class="problem-checklist" id="problemChecklist"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="rf-problem">Aur kuch batana ho? <span style="text-transform:none; letter-spacing:0; color:var(--muted); font-weight:400;">(optional — model, year, etc.)</span></label>
+        <textarea id="rf-problem" name="problem" placeholder="e.g. 55-inch Samsung Smart TV, 3 saal purana, kabhi-kabhi screen black ho jaati hai..."></textarea>
       </div>
 
       <div class="form-row-split">
