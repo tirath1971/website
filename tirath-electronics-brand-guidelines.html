@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tirath Electronics — Brand Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #1F4A3D;
+    --sage: #5B8275;
+    --mint: #B8D4C7;
+    --cream: #F5F0E6;
+    --paper: #FBF8F1;
+    --ink: #1A1A1A;
+    --amber: #D4A574;
+    --muted: #8A8275;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .display { font-family: 'Fraunces', serif; font-weight: 500; letter-spacing: -0.02em; }
+  .serif-italic { font-family: 'Fraunces', serif; font-style: italic; font-weight: 400; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+
+  /* ====== COVER ====== */
+  .cover {
+    min-height: 100vh;
+    background: var(--forest);
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
+    opacity: 0.4;
+  }
+
+  .cover-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-main { position: relative; z-index: 1; }
+
+  .cover-label {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--mint);
+    margin-bottom: 32px;
+  }
+
+  .cover h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(72px, 12vw, 168px);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+  }
+
+  .cover h1 .ital {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--mint);
+  }
+
+  .cover .tagline {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--mint);
+    max-width: 600px;
+    line-height: 1.4;
+  }
+
+  .cover-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-bottom .meta {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  /* ====== SECTIONS ====== */
+  section {
+    padding: 120px 0;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.08);
+  }
+
+  .section-num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--sage);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 48px;
+    color: var(--forest);
+  }
+
+  .section-title .ital {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--sage);
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 1.65;
+    color: var(--ink);
+    max-width: 720px;
+    margin-bottom: 48px;
+  }
+
+  /* ====== STORY ====== */
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .story-quote {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 1.35;
+    color: var(--forest);
+    padding-left: 24px;
+    border-left: 2px solid var(--amber);
+  }
+
+  .story-text p { margin-bottom: 20px; font-size: 17px; }
+
+  /* ====== PERSONALITY ====== */
+  .traits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .trait {
+    padding: 32px;
+    background: var(--cream);
+    border-radius: 4px;
+    border-top: 3px solid var(--forest);
+    transition: transform 0.3s ease;
+  }
+
+  .trait:hover { transform: translateY(-4px); }
+
+  .trait-name {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+
+  .trait-desc { font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+  /* ====== LOGO ====== */
+  .logo-showcase {
+    background: var(--cream);
+    padding: 80px 48px;
+    text-align: center;
+    margin-bottom: 48px;
+    border-radius: 6px;
+  }
+
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+
+  .logo-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--forest);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mint);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .logo-text {
+    font-family: 'Fraunces', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--forest);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .logo-sub {
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-top: 6px;
+  }
+
+  .logo-rules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .rule-card { padding: 24px; border-radius: 4px; }
+
+  .rule-do { background: rgba(31, 74, 61, 0.05); border-left: 3px solid var(--forest); }
+  .rule-dont { background: rgba(212, 165, 116, 0.08); border-left: 3px solid var(--amber); }
+
+  .rule-card h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--forest);
+  }
+
+  .rule-card ul { list-style: none; }
+
+  .rule-card li {
+    font-size: 14px;
+    padding: 6px 0;
+    color: var(--ink);
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .rule-card li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 1px;
+    background: var(--sage);
+  }
+
+  /* ====== COLORS ====== */
+  .color-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .color-swatch {
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .swatch-color {
+    height: 200px;
+    position: relative;
+  }
+
+  .swatch-color.featured { height: 240px; }
+
+  .swatch-info {
+    padding: 20px;
+    background: var(--paper);
+    border: 1px solid rgba(26, 26, 26, 0.08);
+    border-top: none;
+    flex-grow: 1;
+  }
+
+  .swatch-name {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--forest);
+    margin-bottom: 8px;
+  }
+
+  .swatch-hex {
+    font-family: 'Outfit', monospace;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .color-accent-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* ====== TYPOGRAPHY ====== */
+  .type-block {
+    padding: 48px;
+    background: var(--cream);
+    border-radius: 6px;
+    margin-bottom: 24px;
+  }
+
+  .type-label {
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 16px;
+  }
+
+  .type-sample-display {
+    font-family: 'Fraunces', serif;
+    font-size: 88px;
+    font-weight: 500;
+    color: var(--forest);
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+  }
+
+  .type-sample-body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .type-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(26, 26, 26, 0.1);
+    font-size: 13px;
+  }
+
+  .type-info strong {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    color: var(--forest);
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  /* ====== VOICE ====== */
+  .voice-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .voice-card {
+    padding: 28px;
+    background: var(--cream);
+    border-radius: 4px;
+  }
+
+  .voice-card.bad {
+    background: rgba(212, 165, 116, 0.1);
+  }
+
+  .voice-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .voice-tag.say { background: var(--forest); color: var(--mint); }
+  .voice-tag.dont { background: var(--amber); color: white; }
+
+  .voice-card p {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  /* ====== APPLICATIONS ====== */
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .app-card {
+    padding: 32px;
+    background: var(--cream);
+    border-radius: 6px;
+    border-top: 3px solid var(--sage);
+  }
+
+  .app-icon {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 32px;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+
+  .app-title {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--forest);
+    margin-bottom: 8px;
+  }
+
+  .app-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  /* ====== FOOTER ====== */
+  .footer {
+    background: var(--forest);
+    color: var(--mint);
+    padding: 80px 0 48px;
+    text-align: center;
+  }
+
+  .footer-mark {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .footer-line {
+    width: 60px;
+    height: 1px;
+    background: var(--mint);
+    margin: 24px auto;
+    opacity: 0.4;
+  }
+
+  .footer p { font-size: 13px; letter-spacing: 0.1em; opacity: 0.7; }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .story-grid, .traits, .logo-rules, .voice-grid, .apps-grid { grid-template-columns: 1fr; }
+    .color-grid { grid-template-columns: 1fr 1fr; }
+    .type-info { grid-template-columns: 1fr; }
+    .type-sample-display { font-size: 56px; }
+    .type-sample-body { font-size: 20px; }
+    section { padding: 72px 0; }
+  }
+
+  @media print {
+    section { page-break-inside: avoid; }
+    .cover { min-height: auto; padding: 48px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<header class="cover">
+  <div class="container cover-top">
+    <span>Tirath Electronics</span>
+    <span>2026</span>
+  </div>
+
+  <div class="container cover-main">
+    <div class="cover-label">— The Brand Guidelines</div>
+    <h1>Tirath<br><span class="ital">Electronics</span></h1>
+    <p class="tagline">Honest service. Trusted repairs. The shop your neighbourhood actually recommends.</p>
+  </div>
+
+  <div class="container cover-bottom">
+    <span class="meta">Vol. 01 — Identity System</span>
+    <span class="meta">Ludhiana, Punjab</span>
+  </div>
+</header>
+
+<!-- STORY -->
+<section>
+  <div class="container">
+    <div class="section-num">01 — Brand Story</div>
+    <h2 class="section-title">Who we <span class="ital">are</span></h2>
+
+    <div class="story-grid">
+      <div class="story-quote">
+        "We sell electronics, but what we really sell is peace of mind — knowing your stuff will work, and if it doesn't, someone will fix it properly."
+      </div>
+      <div class="story-text">
+        <p>Tirath Electronics is a neighbourhood electronics shop — the kind of place where you can buy a new appliance, get an old one repaired, and actually get a straight answer about what's wrong with it.</p>
+        <p>We serve everyone — students picking up their first headphones, families upgrading the TV, grandparents bringing in a radio that's been through three decades. No talking down, no upselling, no nonsense.</p>
+        <p>The brand should always feel like that one trusted relative who knows electronics — knowledgeable, calm, and never makes you feel silly for asking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONALITY -->
+<section>
+  <div class="container">
+    <div class="section-num">02 — Personality</div>
+    <h2 class="section-title">Four traits we <span class="ital">live by</span></h2>
+    <p class="lead">Every sign, sticker, message, and conversation should carry these four qualities. If something doesn't feel like at least two of them, rework it.</p>
+
+    <div class="traits">
+      <div class="trait">
+        <div class="trait-name">Warm</div>
+        <div class="trait-desc">We greet, we listen, we remember names. The shop feels like walking into a friend's place, not a showroom.</div>
+      </div>
+      <div class="trait">
+        <div class="trait-name">Honest</div>
+        <div class="trait-desc">If a repair costs more than the product is worth, we say so. We quote real prices, real timelines, and no surprise charges.</div>
+      </div>
+      <div class="trait">
+        <div class="trait-name">Skilled</div>
+        <div class="trait-desc">We know our craft. We explain things simply because we understand them deeply — not the other way around.</div>
+      </div>
+      <div class="trait">
+        <div class="trait-name">Dependable</div>
+        <div class="trait-desc">When we say Thursday, we mean Thursday. Predictable, reliable, on time — every single time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO -->
+<section>
+  <div class="container">
+    <div class="section-num">03 — Logo</div>
+    <h2 class="section-title">The <span class="ital">mark</span></h2>
+    <p class="lead">The logo is a simple wordmark paired with a circular emblem holding an italic "T". The circle suggests reliability and completeness; the warm italic letter gives it personality and approachability.</p>
+
+    <div class="logo-showcase">
+      <div class="logo-mark">
+        <div class="logo-icon">T</div>
+        <div>
+          <div class="logo-text">Tirath</div>
+          <div class="logo-sub">Electronics · Since you needed us</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-rules">
+      <div class="rule-card rule-do">
+        <h4>Always</h4>
+        <ul>
+          <li>Use the full lockup on signage and business cards</li>
+          <li>Keep clear space of at least the height of the "T" emblem around the logo</li>
+          <li>Use on solid backgrounds — cream, forest green, or white</li>
+          <li>Maintain the original proportions when scaling</li>
+        </ul>
+      </div>
+      <div class="rule-card rule-dont">
+        <h4>Never</h4>
+        <ul>
+          <li>Don't stretch, skew, or rotate the logo</li>
+          <li>Don't change the colors outside the approved palette</li>
+          <li>Don't add drop shadows, outlines, or 3D effects</li>
+          <li>Don't place over busy photos without a solid backdrop</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLORS -->
+<section>
+  <div class="container">
+    <div class="section-num">04 — Colour</div>
+    <h2 class="section-title">The <span class="ital">palette</span></h2>
+    <p class="lead">Forest green is the soul of the brand — fresh, calm, and trustworthy. Cream paper grounds everything in warmth. Amber appears sparingly, only when something needs to feel celebratory or important.</p>
+
+    <div class="color-grid">
+      <div class="color-swatch">
+        <div class="swatch-color featured" style="background: #1F4A3D;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Forest Deep</div>
+          <div class="swatch-hex">
+            HEX #1F4A3D<br>
+            RGB 31, 74, 61<br>
+            Primary · Use most
+          </div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color featured" style="background: #5B8275;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Sage Leaf</div>
+          <div class="swatch-hex">
+            HEX #5B8275<br>
+            RGB 91, 130, 117<br>
+            Secondary
+          </div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color featured" style="background: #B8D4C7;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Fresh Mint</div>
+          <div class="swatch-hex">
+            HEX #B8D4C7<br>
+            RGB 184, 212, 199<br>
+            Accent · Soft
+          </div>
+        </div>
+      </div>
+      <div class="color-swatch">
+        <div class="swatch-color featured" style="background: #F5F0E6; border: 1px solid rgba(0,0,0,0.06);"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Cream Paper</div>
+          <div class="swatch-hex">
+            HEX #F5F0E6<br>
+            RGB 245, 240, 230<br>
+            Background
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="color-accent-row">
+      <div class="color-swatch" style="display: grid; grid-template-columns: 120px 1fr;">
+        <div style="background: #D4A574; height: 100%; min-height: 90px;"></div>
+        <div class="swatch-info" style="border-left: none;">
+          <div class="swatch-name">Sun Amber</div>
+          <div class="swatch-hex">HEX #D4A574 · Used for warmth & emphasis only</div>
+        </div>
+      </div>
+      <div class="color-swatch" style="display: grid; grid-template-columns: 120px 1fr;">
+        <div style="background: #1A1A1A; height: 100%; min-height: 90px;"></div>
+        <div class="swatch-info" style="border-left: none;">
+          <div class="swatch-name">Ink Black</div>
+          <div class="swatch-hex">HEX #1A1A1A · Body text and fine details</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section>
+  <div class="container">
+    <div class="section-num">05 — Typography</div>
+    <h2 class="section-title">Voice in <span class="ital">letters</span></h2>
+    <p class="lead">Two fonts, used with discipline. A characterful serif for headlines and the brand name. A clean modern sans for everything else.</p>
+
+    <div class="type-block">
+      <div class="type-label">Display Font</div>
+      <div class="type-sample-display">Fraunces</div>
+      <div class="type-sample-body" style="font-family: 'Fraunces', serif; font-style: italic; font-weight: 400; color: var(--sage);">Aa Bb Cc · 1 2 3 ?!</div>
+      <div class="type-info">
+        <div><strong>Use for</strong>Logo, headlines, large prices, signboard text</div>
+        <div><strong>Weights</strong>Regular 400, Medium 500, Italic 400</div>
+        <div><strong>Source</strong>Google Fonts — free for commercial use</div>
+      </div>
+    </div>
+
+    <div class="type-block">
+      <div class="type-label">Body Font</div>
+      <div class="type-sample-display" style="font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 64px;">Outfit</div>
+      <div class="type-sample-body">Aa Bb Cc · 1 2 3 ?!</div>
+      <div class="type-info">
+        <div><strong>Use for</strong>Receipts, posters, WhatsApp graphics, body text</div>
+        <div><strong>Weights</strong>Light 300, Regular 400, Medium 500, Bold 700</div>
+        <div><strong>Source</strong>Google Fonts — free for commercial use</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section>
+  <div class="container">
+    <div class="section-num">06 — Voice & Tone</div>
+    <h2 class="section-title">How we <span class="ital">speak</span></h2>
+    <p class="lead">Warm, plain, and confident. No technical jargon thrown at customers. No "sir/madam" stiffness either — just real, helpful conversation.</p>
+
+    <div class="voice-grid">
+      <div class="voice-card">
+        <span class="voice-tag say">Say</span>
+        <p>"Bring it in — we'll take a look and tell you exactly what's needed. No charge just to check."</p>
+      </div>
+      <div class="voice-card bad">
+        <span class="voice-tag dont">Don't say</span>
+        <p>"Diagnostic charges applicable. Service inspection fee non-refundable."</p>
+      </div>
+      <div class="voice-card">
+        <span class="voice-tag say">Say</span>
+        <p>"Honestly, this one's not worth repairing — but here's a good replacement in your budget."</p>
+      </div>
+      <div class="voice-card bad">
+        <span class="voice-tag dont">Don't say</span>
+        <p>"Repair not feasible. Recommend buying our premium model."</p>
+      </div>
+      <div class="voice-card">
+        <span class="voice-tag say">Say</span>
+        <p>"Ready by Thursday evening. We'll WhatsApp you when it's done."</p>
+      </div>
+      <div class="voice-card bad">
+        <span class="voice-tag dont">Don't say</span>
+        <p>"ETA 48-72 hours subject to parts availability. Customer to follow up."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section>
+  <div class="container">
+    <div class="section-num">07 — Applications</div>
+    <h2 class="section-title">Where it <span class="ital">lives</span></h2>
+    <p class="lead">The brand is built for a walk-in shop. Everything below should feel like the same place — the same colours, the same voice, the same calm warmth.</p>
+
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="app-icon">i</div>
+        <div class="app-title">Shop Signboard</div>
+        <div class="app-desc">Forest green background, cream Fraunces wordmark. Keep it clean — name, "Electronics", phone number. Nothing else.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">ii</div>
+        <div class="app-title">Business Cards</div>
+        <div class="app-desc">Cream paper, forest green ink. Logo on front. Name, role, phone, shop address on back. Matte finish, no gloss.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">iii</div>
+        <div class="app-title">Repair Receipts</div>
+        <div class="app-desc">Use Outfit for all line items. Forest green header strip. Include a thank-you line at the bottom in Fraunces italic.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">iv</div>
+        <div class="app-title">WhatsApp Profile</div>
+        <div class="app-desc">Square logo emblem (the "T" circle) as profile picture. Bio: "Tirath Electronics · Sales & Repairs · [phone]"</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">v</div>
+        <div class="app-title">Carry Bags & Stickers</div>
+        <div class="app-desc">Cream bags with forest green logo. Stickers on every repair item — small, clean, with date written by hand.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">vi</div>
+        <div class="app-title">Posters & Offers</div>
+        <div class="app-desc">Sun Amber for sale tags and seasonal offers — never for everyday signage. Keep amber rare so it stays meaningful.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-mark">Tirath Electronics</div>
+    <div class="footer-line"></div>
+    <p>BRAND GUIDELINES · VOLUME ONE · 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
