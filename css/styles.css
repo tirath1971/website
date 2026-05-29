@@ -1775,6 +1775,180 @@ section {
 
 .story-text p:last-child { margin-bottom: 0; }
 
+/* ===== REPAIR REQUEST MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(20, 48, 40, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow-y: auto;
+}
+
+.modal-overlay.open {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-card {
+  background: var(--paper);
+  max-width: 600px;
+  width: 100%;
+  border-radius: 18px;
+  padding: 44px 40px 36px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 30px 80px rgba(0, 0, 0, 0.3);
+  border-top: 4px solid var(--forest);
+  transform: translateY(24px) scale(0.97);
+  transition: transform 0.4s var(--ease);
+}
+
+.modal-overlay.open .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--forest);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.25s ease, transform 0.25s ease;
+  font-family: inherit;
+}
+
+.modal-close:hover {
+  background: var(--mint);
+  transform: scale(1.08);
+}
+
+.modal-eyebrow {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+
+.modal-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--forest);
+  letter-spacing: -0.018em;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.modal-product {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  line-height: 1.55;
+}
+
+.modal-product strong {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--forest);
+  font-size: 17px;
+}
+
+.modal-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(31, 74, 61, 0.15);
+  border-radius: 8px;
+  background: var(--paper);
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%231F4A3D' stroke-width='1.5' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+  cursor: pointer;
+}
+
+.modal-card select:focus {
+  outline: none;
+  border-color: var(--forest);
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(31, 74, 61, 0.08);
+}
+
+.modal-card .btn {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Make complaint cards feel clickable */
+.complaint-group {
+  cursor: pointer;
+  position: relative;
+}
+
+.complaint-group::after {
+  content: '→';
+  position: absolute;
+  top: 36px;
+  right: 28px;
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  color: var(--sage);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.complaint-group:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 600px) {
+  .modal-card { padding: 36px 24px 28px; border-radius: 14px; }
+  .modal-card h3 { font-size: 24px; }
+  .complaint-group::after { display: none; }
+}
+
+/* ===== FOUNDER PHOTO (about page — replaces monogram when image present) ===== */
+.founder-portrait img.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.founder-portrait img.founder-photo + .founder-monogram,
+.founder-portrait img.founder-photo + .founder-monogram + .founder-monogram-sub {
+  display: none;
+}
+
 /* ===== QUERIES SECTION (home page) ===== */
 .queries-section {
   background: var(--cream);

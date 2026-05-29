@@ -80,7 +80,7 @@
     <div class="complaints-grid">
 
       <!-- TV -->
-      <article class="complaint-group reveal">
+      <article class="complaint-group reveal js-open-repair">
         <div class="complaint-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="1.5"></rect><line x1="8" y1="22" x2="16" y2="22"></line><line x1="12" y1="18" x2="12" y2="22"></line></svg>
         </div>
@@ -98,7 +98,7 @@
       </article>
 
       <!-- AC -->
-      <article class="complaint-group reveal">
+      <article class="complaint-group reveal js-open-repair">
         <div class="complaint-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="8" rx="1.5"></rect><line x1="6" y1="18" x2="6" y2="14"></line><line x1="12" y1="20" x2="12" y2="14"></line><line x1="18" y1="18" x2="18" y2="14"></line></svg>
         </div>
@@ -116,7 +116,7 @@
       </article>
 
       <!-- Microwave -->
-      <article class="complaint-group reveal">
+      <article class="complaint-group reveal js-open-repair">
         <div class="complaint-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="1.5"></rect><line x1="16" y1="5" x2="16" y2="19"></line><circle cx="9" cy="12" r="2.5"></circle></svg>
         </div>
@@ -134,7 +134,7 @@
       </article>
 
       <!-- Sound -->
-      <article class="complaint-group reveal">
+      <article class="complaint-group reveal js-open-repair">
         <div class="complaint-icon">
           <svg viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 6a9 9 0 0 1 0 12"></path></svg>
         </div>
@@ -152,7 +152,7 @@
       </article>
 
       <!-- Kitchen Appliances -->
-      <article class="complaint-group reveal">
+      <article class="complaint-group reveal js-open-repair">
         <div class="complaint-icon">
           <svg viewBox="0 0 24 24"><path d="M9 3v3M15 3v3M9 21v-3M15 21v-3"></path><rect x="6" y="6" width="12" height="12" rx="2"></rect></svg>
         </div>
@@ -170,7 +170,7 @@
       </article>
 
       <!-- Home Appliances -->
-      <article class="complaint-group reveal">
+      <article class="complaint-group reveal js-open-repair">
         <div class="complaint-icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
         </div>
@@ -384,6 +384,75 @@
     </div>
   </div>
 </footer>
+
+<!-- REPAIR REQUEST MODAL -->
+<div class="modal-overlay" id="repairModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <button class="modal-close" type="button" aria-label="Close">×</button>
+    <div class="modal-eyebrow">— Repair request</div>
+    <h3 id="modalTitle">Apni problem batao</h3>
+    <p class="modal-product">
+      Product: <strong id="modalProductLabel">—</strong><br>
+      Sab details bhar do — hum WhatsApp pe 20 minute mein quote denge.
+    </p>
+
+    <form id="repairForm" class="js-wa-form" novalidate>
+      <input type="hidden" name="product" id="modalProductInput" value="">
+
+      <div class="form-row">
+        <label for="rf-name">Aapka naam</label>
+        <input type="text" id="rf-name" name="name" placeholder="e.g. Harpreet Singh" required autocomplete="name">
+      </div>
+
+      <div class="form-row-split">
+        <div class="form-row">
+          <label for="rf-phone">Phone</label>
+          <input type="tel" id="rf-phone" name="phone" placeholder="+91 ..." required autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="rf-email">Email</label>
+          <input type="email" id="rf-email" name="email" placeholder="aap@example.com" required autocomplete="email">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="rf-problem">Kya problem hai? (model bhi batao)</label>
+        <textarea id="rf-problem" name="problem" placeholder="e.g. 55-inch Samsung Smart TV — picture aa rahi par sound nahi..." required></textarea>
+      </div>
+
+      <div class="form-row-split">
+        <div class="form-row">
+          <label for="rf-duration">Kitne din se ye problem hai?</label>
+          <select id="rf-duration" name="duration" required>
+            <option value="">Choose karo...</option>
+            <option>Aaj hi hua</option>
+            <option>2–3 din</option>
+            <option>Ek hafta</option>
+            <option>2–4 hafte</option>
+            <option>Ek mahina ya zyada</option>
+            <option>Kaafi time se</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="rf-tried">Pehle koi aur mechanic try kiya?</label>
+          <select id="rf-tried" name="tried" required>
+            <option value="">Choose karo...</option>
+            <option>Nahi, pehli baar</option>
+            <option>Haan, par theek nahi hua</option>
+            <option>Haan, kuch din theek raha phir same problem</option>
+            <option>Haan, par bahut zyada price bola</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-whatsapp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.9 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.2zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+        Send repair request on WhatsApp
+      </button>
+      <p class="form-note">Sab details ek hi message mein WhatsApp pe jayegi — koi spam nahi.</p>
+    </form>
+  </div>
+</div>
 
 <a href="https://wa.me/918872177341?text=Hi%2C+repair+ke+liye+quote+chahiye" target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp us">
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.9 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.2zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
