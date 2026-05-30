@@ -10,6 +10,24 @@
 
     /* ===== HINGLISH (default — site copy as-written) ===== */
     hg: {
+      products: {
+        pageEyebrow: '— Catalogue', pageTitle1: 'Asli quality.', pageTitle2: 'Theek prices.',
+        pageSub: 'Hand-picked TVs, ACs, microwaves, sound systems aur appliances — sab kuch jo ghar mein chahiye. WhatsApp karo apni pasand ka product, hum best price denge.',
+        heroWA: 'WhatsApp the shop', heroRepair: 'Need a repair instead?',
+        catAll: 'All products', catTV: 'Televisions', catAC: 'Air Conditioners',
+        catMW: 'Microwaves', catSound: 'Sound systems', catApp: 'Appliances', catAcc: 'Accessories'
+      },
+      repairs: {
+        pageEyebrow: '— Repairs & Service',
+        pageTitle1: 'Kuch bhi kharab?', pageTitle2: 'Le aao.',
+        pageSub: 'TVs, ACs, microwaves, sound systems, appliances — humne sab kuch khola hai. Free diagnostic, honest quote, no surprise charges. 40+ saal ka tajurba.',
+        heroVideo: 'Send a video', heroWA: 'WhatsApp for quote'
+      },
+      about: {
+        pageEyebrow: '— About us',
+        pageTitle1: 'The shop, the man,', pageTitle2pre: 'the', pageTitle2i: '40+ years.',
+        pageSub: 'Tirath Electronics ki kahani simple hai — ek aadmi, ek kasam, char dahaiyan. Honest service, trusted repairs, and the warmth of a neighbourhood that knows your name.'
+      },
       nav: {
         home: 'Home', products: 'Products', repairs: 'Repairs',
         about: 'About', call: 'Call shop'
@@ -46,12 +64,19 @@
         title3: 'aur theek bhi.',
         sub: 'Teen kaam — proper tareeke se. Chautha kuch chhupa ke nahi.',
         repair: 'Repairs', sales: 'New & refurbished sales', advice: 'Honest advice',
+        repairDesc: 'TVs, ACs, microwaves, sound systems, mixers — kuch bhi circuit wala. Le aao, hum aapke saamne diagnose karke real quote denge.',
+        salesDesc: 'Hand-picked TVs aur appliances jo hum apne ghar mein bhi rakhenge. Har refurbished piece pehle test, khola aur serviced by us.',
+        adviceDesc: 'Pata nahi naya lena hai ya purana theek karwana? Walk in karo. No appointment, no pressure, no upselling. Hum bata denge hum kya karenge.',
         seeRepair: 'See repairs →', browse: 'Browse products →', aboutUs: 'About us →'
       },
       values: {
         num: '03 — Log wapas kyon aate hain',
         title1: 'Char baatein jo hum', title2: 'har visit pe', title3: 'promise karte hain.',
-        warm: 'Warm', honest: 'Honest', skilled: 'Skilled', dependable: 'Dependable'
+        warm: 'Warm', honest: 'Honest', skilled: 'Skilled', dependable: 'Dependable',
+        warmDesc: 'Hum greet karte hain, sunte hain, naam yaad rakhte hain. Andar aana ek dost ke ghar jaise feel hota hai — showroom jaise nahi.',
+        honestDesc: 'Agar repair product ki value se zyada hai, hum seedha bol denge. Real prices, real timelines, no surprise charges at pickup.',
+        skilledDesc: 'Hum apna kaam jaante hain. Simply explain karte hain kyunki deeply samajhte hain — opposite nahi.',
+        dependableDesc: 'Jab hum Thursday bolen, matlab Thursday. Predictable, reliable, on time — har baar.'
       },
       reviews: {
         num: '04 — What customers say',
@@ -79,6 +104,24 @@
 
     /* ===== ENGLISH ===== */
     en: {
+      products: {
+        pageEyebrow: '— Catalogue', pageTitle1: 'Real quality.', pageTitle2: 'Fair prices.',
+        pageSub: 'Hand-picked TVs, ACs, microwaves, sound systems and appliances — everything you need at home. WhatsApp us for the best price on what you want.',
+        heroWA: 'WhatsApp the shop', heroRepair: 'Need a repair instead?',
+        catAll: 'All products', catTV: 'Televisions', catAC: 'Air Conditioners',
+        catMW: 'Microwaves', catSound: 'Sound systems', catApp: 'Appliances', catAcc: 'Accessories'
+      },
+      repairs: {
+        pageEyebrow: '— Repairs & Service',
+        pageTitle1: 'Something broken?', pageTitle2: 'Bring it in.',
+        pageSub: 'TVs, ACs, microwaves, sound systems, appliances — we have opened them all. Free diagnostic, honest quote, no surprise charges. 40+ years of experience.',
+        heroVideo: 'Send a video', heroWA: 'WhatsApp for quote'
+      },
+      about: {
+        pageEyebrow: '— About us',
+        pageTitle1: 'The shop, the man,', pageTitle2pre: 'the', pageTitle2i: '40+ years.',
+        pageSub: 'The Tirath Electronics story is simple — one man, one promise, four decades. Honest service, trusted repairs, and the warmth of a neighbourhood that knows your name.'
+      },
       nav: { home: 'Home', products: 'Products', repairs: 'Repairs', about: 'About', call: 'Call shop' },
       promo: { tag: 'Special offer', head: "You'll get a discount", sub: 'on your purchase —', cta: 'Claim on WhatsApp →' },
       hero: {
@@ -109,12 +152,19 @@
         title3: 'and fix them properly.',
         sub: 'Three things, done right. No fourth thing hidden inside.',
         repair: 'Repairs', sales: 'New & refurbished sales', advice: 'Honest advice',
+        repairDesc: 'TVs, ACs, microwaves, sound systems, mixers — anything with a circuit. Bring it in, we diagnose it in front of you and give you a real quote.',
+        salesDesc: 'Hand-picked TVs and appliances we would happily keep at home ourselves. Every refurbished piece is tested, opened, and serviced by us first.',
+        adviceDesc: "Not sure whether to buy new or repair the old one? Walk in. No appointment, no pressure, no upselling. We tell you what we would do.",
         seeRepair: 'See repairs →', browse: 'Browse products →', aboutUs: 'About us →'
       },
       values: {
         num: '03 — Why customers come back',
         title1: 'Four things we promise', title2: 'on every visit.', title3: '',
-        warm: 'Warm', honest: 'Honest', skilled: 'Skilled', dependable: 'Dependable'
+        warm: 'Warm', honest: 'Honest', skilled: 'Skilled', dependable: 'Dependable',
+        warmDesc: 'We greet you, we listen, we remember names. Walking in feels like visiting a friend’s place, not a showroom.',
+        honestDesc: 'If a repair costs more than the product is worth, we say so. Real prices, real timelines, no surprise charges at pickup.',
+        skilledDesc: 'We know our craft. We explain things simply because we understand them deeply — not the other way around.',
+        dependableDesc: 'When we say Thursday, we mean Thursday. Predictable, reliable, on time — every single time.'
       },
       reviews: {
         num: '04 — What customers say',
@@ -142,6 +192,24 @@
 
     /* ===== HINDI ===== */
     hi: {
+      products: {
+        pageEyebrow: '— उत्पाद सूची', pageTitle1: 'असली क्वालिटी।', pageTitle2: 'सही दाम।',
+        pageSub: 'चुनिंदा TV, AC, माइक्रोवेव, साउंड सिस्टम और घरेलू सामान — घर की हर ज़रूरत। अपनी पसंद का प्रोडक्ट व्हाट्सएप करें, हम सबसे अच्छा दाम देंगे।',
+        heroWA: 'दुकान को व्हाट्सएप करें', heroRepair: 'मरम्मत चाहिए?',
+        catAll: 'सभी उत्पाद', catTV: 'टेलीविज़न', catAC: 'एयर कंडीशनर',
+        catMW: 'माइक्रोवेव', catSound: 'साउंड सिस्टम', catApp: 'घरेलू सामान', catAcc: 'एक्सेसरीज़'
+      },
+      repairs: {
+        pageEyebrow: '— मरम्मत और सेवा',
+        pageTitle1: 'कुछ खराब है?', pageTitle2: 'ले आओ।',
+        pageSub: 'TV, AC, माइक्रोवेव, साउंड सिस्टम, घरेलू सामान — हमने सब कुछ खोला है। फ्री डायग्नोस्टिक, ईमानदार कोट, कोई छुपा चार्ज नहीं। 40+ साल का तजुर्बा।',
+        heroVideo: 'वीडियो भेजें', heroWA: 'कोट के लिए व्हाट्सएप करें'
+      },
+      about: {
+        pageEyebrow: '— हमारे बारे में',
+        pageTitle1: 'दुकान, इंसान,', pageTitle2pre: 'और', pageTitle2i: '40+ साल।',
+        pageSub: 'तीरथ इलेक्ट्रॉनिक्स की कहानी सरल है — एक इंसान, एक वादा, चार दशक। ईमानदार सेवा, भरोसेमंद मरम्मत, और मोहल्ले का वो अपनापन जहाँ आपको नाम से जानते हैं।'
+      },
       nav: { home: 'होम', products: 'उत्पाद', repairs: 'मरम्मत', about: 'हमारे बारे में', call: 'कॉल करें' },
       promo: { tag: 'विशेष ऑफर', head: 'आपको छूट मिलेगी', sub: 'अपनी खरीदारी पर —', cta: 'व्हाट्सएप पर पाएं →' },
       hero: {
@@ -172,12 +240,19 @@
         title3: 'और सही करते हैं।',
         sub: 'तीन काम — सही तरीके से। चौथा कुछ छुपा कर नहीं।',
         repair: 'मरम्मत', sales: 'नए और रीफर्बिश्ड सेल्स', advice: 'ईमानदार सलाह',
+        repairDesc: 'TV, AC, माइक्रोवेव, साउंड सिस्टम, मिक्सर — कुछ भी सर्किट वाला। ले आओ, हम आपके सामने जाँच करके सही कोट देंगे।',
+        salesDesc: 'चुनिंदा TV और घरेलू सामान — ऐसे जो हम अपने घर में भी रखें। हर रीफर्बिश्ड पीस पहले टेस्ट, खोल कर सर्विस होता है।',
+        adviceDesc: 'नया लेना है या पुराना ठीक करवाना? बस अंदर आ जाओ। कोई अपॉइंटमेंट नहीं, कोई प्रेशर नहीं। हम बताएंगे हम क्या करते।',
         seeRepair: 'मरम्मत देखें →', browse: 'प्रोडक्ट देखें →', aboutUs: 'हमारे बारे में →'
       },
       values: {
         num: '03 — लोग वापस क्यों आते हैं',
         title1: 'चार बातें जो हम', title2: 'हर विज़िट पे', title3: 'वादा करते हैं।',
-        warm: 'गर्मजोशी', honest: 'ईमानदारी', skilled: 'हुनरमंद', dependable: 'भरोसेमंद'
+        warm: 'गर्मजोशी', honest: 'ईमानदारी', skilled: 'हुनरमंद', dependable: 'भरोसेमंद',
+        warmDesc: 'हम स्वागत करते हैं, सुनते हैं, नाम याद रखते हैं। यहाँ आना दोस्त के घर जैसा लगता है — शोरूम जैसा नहीं।',
+        honestDesc: 'अगर मरम्मत प्रोडक्ट की कीमत से ज़्यादा है तो सीधा बता देते हैं। सही दाम, सही समय, कोई छुपा चार्ज नहीं।',
+        skilledDesc: 'हम अपना काम जानते हैं। हम सादगी से समझाते हैं क्योंकि हम गहराई से समझते हैं — उल्टा नहीं।',
+        dependableDesc: 'जब हम गुरुवार बोलें, मतलब गुरुवार। भरोसेमंद, सही समय पर — हर बार।'
       },
       reviews: {
         num: '04 — ग्राहक क्या कहते हैं',
@@ -205,6 +280,24 @@
 
     /* ===== PUNJABI (Gurmukhi) ===== */
     pa: {
+      products: {
+        pageEyebrow: '— ਉਤਪਾਦ ਸੂਚੀ', pageTitle1: 'ਅਸਲ ਕੁਆਲਿਟੀ।', pageTitle2: 'ਸਹੀ ਕੀਮਤ।',
+        pageSub: 'ਚੁਣੇ ਹੋਏ TV, AC, ਮਾਈਕ੍ਰੋਵੇਵ, ਸਾਊਂਡ ਸਿਸਟਮ ਅਤੇ ਘਰੇਲੂ ਸਮਾਨ — ਘਰ ਦੀ ਹਰ ਲੋੜ। ਆਪਣੀ ਪਸੰਦ ਦਾ ਪ੍ਰੋਡਕਟ ਵਟਸਐਪ ਕਰੋ, ਅਸੀਂ ਸਭ ਤੋਂ ਵਧੀਆ ਕੀਮਤ ਦੇਵਾਂਗੇ।',
+        heroWA: 'ਦੁਕਾਨ ਨੂੰ ਵਟਸਐਪ ਕਰੋ', heroRepair: 'ਮੁਰੰਮਤ ਚਾਹੀਦੀ ਹੈ?',
+        catAll: 'ਸਾਰੇ ਉਤਪਾਦ', catTV: 'ਟੈਲੀਵਿਜ਼ਨ', catAC: 'ਏਅਰ ਕੰਡੀਸ਼ਨਰ',
+        catMW: 'ਮਾਈਕ੍ਰੋਵੇਵ', catSound: 'ਸਾਊਂਡ ਸਿਸਟਮ', catApp: 'ਘਰੇਲੂ ਸਮਾਨ', catAcc: 'ਐਕਸੈਸਰੀਜ਼'
+      },
+      repairs: {
+        pageEyebrow: '— ਮੁਰੰਮਤ ਅਤੇ ਸੇਵਾ',
+        pageTitle1: 'ਕੁਝ ਖਰਾਬ ਹੈ?', pageTitle2: 'ਲੈ ਆਓ।',
+        pageSub: 'TV, AC, ਮਾਈਕ੍ਰੋਵੇਵ, ਸਾਊਂਡ ਸਿਸਟਮ, ਘਰੇਲੂ ਸਮਾਨ — ਅਸੀਂ ਸਭ ਕੁਝ ਖੋਲ੍ਹਿਆ ਹੈ। ਫ੍ਰੀ ਡਾਇਗਨੋਸਟਿਕ, ਇਮਾਨਦਾਰ ਕੋਟ, ਕੋਈ ਛੁਪਿਆ ਚਾਰਜ ਨਹੀਂ। 40+ ਸਾਲ ਦਾ ਤਜ਼ਰਬਾ।',
+        heroVideo: 'ਵੀਡੀਓ ਭੇਜੋ', heroWA: 'ਕੋਟ ਲਈ ਵਟਸਐਪ ਕਰੋ'
+      },
+      about: {
+        pageEyebrow: '— ਸਾਡੇ ਬਾਰੇ',
+        pageTitle1: 'ਦੁਕਾਨ, ਇਨਸਾਨ,', pageTitle2pre: 'ਅਤੇ', pageTitle2i: '40+ ਸਾਲ।',
+        pageSub: 'ਤੀਰਥ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੀ ਕਹਾਣੀ ਸਿੱਧੀ ਹੈ — ਇੱਕ ਇਨਸਾਨ, ਇੱਕ ਵਾਅਦਾ, ਚਾਰ ਦਹਾਕੇ। ਇਮਾਨਦਾਰ ਸੇਵਾ, ਭਰੋਸੇਮੰਦ ਮੁਰੰਮਤ, ਅਤੇ ਉਹ ਮੁਹੱਲੇ ਦਾ ਨਿੱਘ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਨਾਮ ਤੋਂ ਜਾਣਦੇ ਹਨ।'
+      },
       nav: { home: 'ਹੋਮ', products: 'ਉਤਪਾਦ', repairs: 'ਮੁਰੰਮਤ', about: 'ਸਾਡੇ ਬਾਰੇ', call: 'ਕਾਲ ਕਰੋ' },
       promo: { tag: 'ਖਾਸ ਆਫਰ', head: 'ਤੁਹਾਨੂੰ ਛੋਟ ਮਿਲੇਗੀ', sub: 'ਆਪਣੀ ਖਰੀਦਦਾਰੀ ’ਤੇ —', cta: 'ਵਟਸਐਪ ’ਤੇ ਪਾਓ →' },
       hero: {
@@ -235,12 +328,19 @@
         title3: 'ਅਤੇ ਸਹੀ ਕਰਦੇ ਹਾਂ।',
         sub: 'ਤਿੰਨ ਕੰਮ — ਸਹੀ ਤਰੀਕੇ ਨਾਲ। ਚੌਥਾ ਕੁਝ ਛੁਪਾ ਕੇ ਨਹੀਂ।',
         repair: 'ਮੁਰੰਮਤ', sales: 'ਨਵੇਂ ਅਤੇ ਰੀਫਰਬਿਸ਼ਡ ਸੇਲਾਂ', advice: 'ਇਮਾਨਦਾਰ ਸਲਾਹ',
+        repairDesc: 'TV, AC, ਮਾਈਕ੍ਰੋਵੇਵ, ਸਾਊਂਡ ਸਿਸਟਮ, ਮਿਕਸਰ — ਕੁਝ ਵੀ ਸਰਕਟ ਵਾਲਾ। ਲੈ ਆਓ, ਅਸੀਂ ਤੁਹਾਡੇ ਸਾਮ੍ਹਣੇ ਜਾਂਚ ਕਰਕੇ ਸਹੀ ਕੋਟ ਦੇਵਾਂਗੇ।',
+        salesDesc: 'ਚੁਣੇ ਹੋਏ TV ਅਤੇ ਘਰੇਲੂ ਸਮਾਨ — ਉਹ ਜੋ ਅਸੀਂ ਆਪਣੇ ਘਰ ਵਿੱਚ ਵੀ ਰੱਖੀਏ। ਹਰ ਰੀਫਰਬਿਸ਼ਡ ਪੀਸ ਪਹਿਲਾਂ ਟੈਸਟ ਅਤੇ ਸਰਵਿਸ ਹੁੰਦਾ ਹੈ।',
+        adviceDesc: 'ਨਵਾਂ ਲੈਣਾ ਹੈ ਜਾਂ ਪੁਰਾਣਾ ਠੀਕ ਕਰਵਾਉਣਾ? ਅੰਦਰ ਆ ਜਾਓ। ਕੋਈ ਅਪੌਇੰਟਮੈਂਟ ਨਹੀਂ, ਕੋਈ ਪ੍ਰੈਸ਼ਰ ਨਹੀਂ। ਅਸੀਂ ਦੱਸਾਂਗੇ ਅਸੀਂ ਕੀ ਕਰਾਂਗੇ।',
         seeRepair: 'ਮੁਰੰਮਤ ਵੇਖੋ →', browse: 'ਪ੍ਰੋਡਕਟ ਵੇਖੋ →', aboutUs: 'ਸਾਡੇ ਬਾਰੇ →'
       },
       values: {
         num: '03 — ਲੋਕ ਵਾਪਸ ਕਿਉਂ ਆਉਂਦੇ ਹਨ',
         title1: 'ਚਾਰ ਗੱਲਾਂ ਜੋ ਅਸੀਂ', title2: 'ਹਰ ਮੁਲਾਕਾਤ ’ਤੇ', title3: 'ਵਾਅਦਾ ਕਰਦੇ ਹਾਂ।',
-        warm: 'ਨਿੱਘ', honest: 'ਇਮਾਨਦਾਰੀ', skilled: 'ਹੁਨਰਮੰਦ', dependable: 'ਭਰੋਸੇਮੰਦ'
+        warm: 'ਨਿੱਘ', honest: 'ਇਮਾਨਦਾਰੀ', skilled: 'ਹੁਨਰਮੰਦ', dependable: 'ਭਰੋਸੇਮੰਦ',
+        warmDesc: 'ਅਸੀਂ ਸਵਾਗਤ ਕਰਦੇ ਹਾਂ, ਸੁਣਦੇ ਹਾਂ, ਨਾਮ ਯਾਦ ਰੱਖਦੇ ਹਾਂ। ਅੰਦਰ ਆਉਣਾ ਦੋਸਤ ਦੇ ਘਰ ਵਰਗਾ ਲੱਗਦਾ ਹੈ — ਸ਼ੋਅਰੂਮ ਵਰਗਾ ਨਹੀਂ।',
+        honestDesc: 'ਜੇ ਮੁਰੰਮਤ ਪ੍ਰੋਡਕਟ ਦੀ ਕੀਮਤ ਨਾਲੋਂ ਜ਼ਿਆਦਾ ਹੈ ਤਾਂ ਸਿੱਧਾ ਦੱਸ ਦਿੰਦੇ ਹਾਂ। ਸਹੀ ਕੀਮਤ, ਸਹੀ ਸਮਾਂ, ਕੋਈ ਛੁਪਿਆ ਚਾਰਜ ਨਹੀਂ।',
+        skilledDesc: 'ਅਸੀਂ ਆਪਣਾ ਕੰਮ ਜਾਣਦੇ ਹਾਂ। ਅਸੀਂ ਸਾਦਗੀ ਨਾਲ ਸਮਝਾਉਂਦੇ ਹਾਂ ਕਿਉਂਕਿ ਅਸੀਂ ਡੂੰਘਾਈ ਨਾਲ ਸਮਝਦੇ ਹਾਂ — ਉਲਟਾ ਨਹੀਂ।',
+        dependableDesc: 'ਜਦੋਂ ਅਸੀਂ ਵੀਰਵਾਰ ਕਹੀਏ, ਮਤਲਬ ਵੀਰਵਾਰ। ਭਰੋਸੇਮੰਦ, ਸਹੀ ਸਮੇਂ ’ਤੇ — ਹਰ ਵਾਰ।'
       },
       reviews: {
         num: '04 — ਗ੍ਰਾਹਕ ਕੀ ਕਹਿੰਦੇ ਹਨ',
