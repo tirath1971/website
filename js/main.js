@@ -118,7 +118,7 @@
     videos.forEach((v) => vio.observe(v));
   }
 
-  /* ---------- 7. All WhatsApp forms (lead + queries + repair modal) ---------- */
+  /* ---------- 7. All WhatsApp forms (lead + queries + repair + express) ---------- */
   document.querySelectorAll('form.js-wa-form').forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -131,7 +131,9 @@
       const product = (data.get('product') || '').toString().trim();
       const duration = (data.get('duration') || '').toString().trim();
       const tried = (data.get('tried') || '').toString().trim();
+      const address = (data.get('address') || '').toString().trim();
       const issues = data.getAll('issues').map((s) => s.toString().trim()).filter(Boolean);
+      const formType = (form.dataset.formType || '').toLowerCase();
 
       if (!name || !phone) {
         const target = form.querySelector('[name="name"]:invalid, [name="phone"]:invalid')
@@ -149,23 +151,34 @@
         return;
       }
 
-      let msg = `Namaste! Main ${name} bol raha/i hoon.\n\n`;
-      msg += `📞 Phone: ${phone}\n`;
-      if (email) msg += `📧 Email: ${email}\n`;
-      if (product) msg += `\n🔧 Product / category: ${product}`;
+      let msg = '';
+      if (formType === 'express') {
+        msg += `🏠 EXPRESS HOME-VISIT BOOKING (₹300 visit fee)\n\n`;
+        msg += `Namaste! Main ${name} bol raha/i hoon.\n\n`;
+        msg += `📞 Phone: ${phone}\n📧 Email: ${email}\n`;
+        if (address) msg += `\n📍 Visit address:\n${address}\n`;
+        if (problem) msg += `\n🔧 Problem:\n${problem}`;
+        msg += `\n\n⚡ Express service — confirm visit slot please.`;
+        msg += `\n💰 Visit fee: ₹300 (diagnostic included).`;
+      } else {
+        msg += `Namaste! Main ${name} bol raha/i hoon.\n\n`;
+        msg += `📞 Phone: ${phone}\n`;
+        if (email) msg += `📧 Email: ${email}\n`;
+        if (product) msg += `\n🔧 Product / category: ${product}`;
 
-      if (issues.length) {
-        msg += `\n\n✓ Specific issues:\n` + issues.map((i) => `  • ${i}`).join('\n');
+        if (issues.length) {
+          msg += `\n\n✓ Specific issues:\n` + issues.map((i) => `  • ${i}`).join('\n');
+        }
+
+        const detail = problem || query;
+        if (detail) {
+          const label = problem ? 'Aur detail' : 'Query';
+          msg += `\n\n${label}:\n${detail}`;
+        }
+
+        if (duration) msg += `\n\n⏱  Kitne din se: ${duration}`;
+        if (tried) msg += `\n🔁 Pehle koi mechanic try kiya: ${tried}`;
       }
-
-      const detail = problem || query;
-      if (detail) {
-        const label = problem ? 'Aur detail' : 'Query';
-        msg += `\n\n${label}:\n${detail}`;
-      }
-
-      if (duration) msg += `\n\n⏱  Kitne din se: ${duration}`;
-      if (tried) msg += `\n🔁 Pehle koi mechanic try kiya: ${tried}`;
 
       const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
       window.open(url, '_blank');
@@ -249,6 +262,38 @@
     });
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && repairModal.classList.contains('open')) closeModal();
+    });
+  }
+
+  /* ---------- 12. Express home-visit modal ---------- */
+  const expressModal = document.getElementById('expressModal');
+  if (expressModal) {
+    const expressCloseBtn = expressModal.querySelector('.modal-close');
+
+    const openExpress = () => {
+      expressModal.classList.add('open');
+      expressModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        const first = expressModal.querySelector('input[type="text"]');
+        if (first) first.focus();
+      }, 250);
+    };
+    const closeExpress = () => {
+      expressModal.classList.remove('open');
+      expressModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    document.querySelectorAll('.js-open-express').forEach((btn) => {
+      btn.addEventListener('click', openExpress);
+    });
+    if (expressCloseBtn) expressCloseBtn.addEventListener('click', closeExpress);
+    expressModal.addEventListener('click', (e) => {
+      if (e.target === expressModal) closeExpress();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && expressModal.classList.contains('open')) closeExpress();
     });
   }
 
