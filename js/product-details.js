@@ -29,7 +29,7 @@
         'Save up to 40-50% vs branded 32" Smart TV',
         '1-year full warranty from Tirath Electronics directly',
         'Service handled in-shop — no waiting for company service',
-        'Our bestseller — most popular size in Mukerian'
+        'Our bestseller — most popular size across Punjab'
       ],
       specs: {
         'Screen size': '32 inches',
@@ -158,15 +158,15 @@
       benefits: [
         'Perfect second TV for any room',
         'Special discount available',
-        'Free delivery within Mukerian',
-        '1-year manufacturer + 6-month shop warranty'
+        'Free delivery across Punjab',
+        '1-year manufacturer + 1-year shop warranty'
       ],
       specs: {
         'Screen size': '32 inches',
         'Resolution': 'HD Ready (1366×768)',
         'Sound output': '20W stereo',
         'Connectivity': 'HDMI×2, USB, AV in',
-        'Warranty': '1 yr (panel) + 6 mo (shop)'
+        'Warranty': '1 yr (panel) + 1 yr (shop)'
       }
     },
 
@@ -639,13 +639,13 @@
         'Walk in with your old remote — we match within minutes',
         'Saves you a service-centre visit',
         'Cheaper than original branded remote',
-        '6-month shop warranty'
+        '1-year shop warranty'
       ],
       specs: {
         'Compatibility': '100+ brands (TVs + ACs)',
         'Battery': '2 × AAA (included)',
         'Range': '10 metres',
-        'Warranty': '6 months (shop)'
+        'Warranty': '1 year (shop)'
       }
     },
 
