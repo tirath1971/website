@@ -25,3 +25,8 @@ build/
 
 # Claude planning / scratch
 .claude/
+
+# Screenshots dropped into folder
+Screenshot *.png
+Screenshot *.jpg
+*.tmp
