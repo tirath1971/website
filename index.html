@@ -15,10 +15,10 @@
 
 <!-- PROMO BAR -->
 <div class="promo-bar">
-  <span class="promo-tag">Special offer</span>
-  <strong>You'll get a discount</strong>
-  <span>on your purchase —</span>
-  <a href="https://wa.me/918872177341?text=Hi%2C+discount+offer+ke+baare+mein+puchna+tha." target="_blank" rel="noopener">Claim on WhatsApp →</a>
+  <span class="promo-tag" data-i18n="promo.tag">Special offer</span>
+  <strong data-i18n="promo.head">You'll get a discount</strong>
+  <span data-i18n="promo.sub">on your purchase —</span>
+  <a href="https://wa.me/918872177341?text=Hi%2C+discount+offer+ke+baare+mein+puchna+tha." target="_blank" rel="noopener"><span data-i18n="promo.cta">Claim on WhatsApp â†’</span></a>
 </div>
 
 <!-- NAV -->
@@ -32,11 +32,17 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="repairs.html">Repairs</a>
-      <a href="about.html">About</a>
-      <a href="tel:+918872177341" class="nav-cta">Call shop</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="products.html" data-i18n="nav.products">Products</a>
+      <a href="repairs.html" data-i18n="nav.repairs">Repairs</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="tel:+918872177341" class="nav-cta" data-i18n="nav.call">Call shop</a>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="pa" title="à¨ªà©°à¨œà¨¾à¨¬à©€">à¨ªà©°</button>
+        <button type="button" class="lang-btn" data-lang="hi" title="à¤¹à¤¿à¤¨à¥à¤¦à¥€">à¤¹à¤¿</button>
+        <button type="button" class="lang-btn" data-lang="en" title="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="hg" title="Hinglish">HG</button>
+      </div>
     </div>
   </div>
 </nav>
@@ -47,22 +53,22 @@
     <div class="hero-text">
       <div class="hero-eyebrow reveal">— Bhangala, Mukerian · Since 40+ years</div>
       <h1 class="hero-title reveal">
-        Honest service.<br>
-        Trusted <span class="ital">repairs.</span>
+        <span data-i18n="hero.title1">Honest service.</span><br>
+        <span data-i18n="hero.title2">Trusted</span> <span class="ital" data-i18n="hero.title2i">repairs.</span>
       </h1>
-      <p class="hero-tagline reveal">
+      <p class="hero-tagline reveal" data-i18n="hero.tagline">
         Bharosa, asli quality, sahi daam — har baar. The shop your
         neighbourhood actually recommends, for TVs, ACs, microwaves
         aur sab kuch jo ghar mein chahiye.
       </p>
       <div class="hero-actions reveal">
-        <a href="repairs.html" class="btn btn-primary">Get a repair quote</a>
-        <a href="products.html" class="btn btn-ghost">Browse products</a>
+        <a href="repairs.html" class="btn btn-primary" data-i18n="hero.btnRepair">Get a repair quote</a>
+        <a href="products.html" class="btn btn-ghost" data-i18n="hero.btnBrowse">Browse products</a>
       </div>
       <div class="hero-meta reveal">
-        <div><strong>Free diagnostic</strong><span>Check karne ka koi charge nahi</span></div>
-        <div><strong>40+ saal ka tajurba</strong><span>Tirath Singh, since day one</span></div>
-        <div><strong>WhatsApp updates</strong><span>Ho jaye toh batayenge</span></div>
+        <div><strong data-i18n="hero.metaFreeT">Free diagnostic</strong><span data-i18n="hero.metaFreeS">Check karne ka koi charge nahi</span></div>
+        <div><strong data-i18n="hero.meta40T">40+ saal ka tajurba</strong><span data-i18n="hero.meta40S">Tirath Singh, since day one</span></div>
+        <div><strong data-i18n="hero.metaWAT">WhatsApp updates</strong><span data-i18n="hero.metaWAS">Ho jaye toh batayenge</span></div>
       </div>
     </div>
 
@@ -142,7 +148,7 @@
     <div class="services-grid">
       <article class="service-card reveal">
         <div class="service-num">i</div>
-        <h3>Repairs</h3>
+        <h3 data-i18n="services.repair">Repairs</h3>
         <p>
           TVs, ACs, microwaves, sound systems, mixers — kuch bhi circuit
           wala. Le aao, hum aapke saamne diagnose karke real quote denge.
@@ -152,12 +158,12 @@
           <li>Original ya quality spares — choice aapki</li>
           <li>Theek karwana worth na ho toh seedha bata denge</li>
         </ul>
-        <a href="repairs.html" class="btn btn-ghost" style="margin-top: 8px;">See repairs →</a>
+        <a href="repairs.html" class="btn btn-ghost" style="margin-top: 8px;">See repairs â†’</a>
       </article>
 
       <article class="service-card service-card-feature reveal">
         <div class="service-num">ii</div>
-        <h3>New &amp; refurbished sales</h3>
+        <h3 data-i18n="services.sales">New &amp; refurbished sales</h3>
         <p>
           Hand-picked TVs aur appliances jo hum apne ghar mein bhi rakhenge.
           Har refurbished piece pehle test, khola aur serviced by us.
@@ -167,12 +173,12 @@
           <li>1-year shop warranty on refurbished</li>
           <li>Free delivery across Punjab</li>
         </ul>
-        <a href="products.html" class="btn btn-primary" style="margin-top: 8px;">Browse products →</a>
+        <a href="products.html" class="btn btn-primary" style="margin-top: 8px;">Browse products â†’</a>
       </article>
 
       <article class="service-card reveal">
         <div class="service-num">iii</div>
-        <h3>Honest advice</h3>
+        <h3 data-i18n="services.advice">Honest advice</h3>
         <p>
           Pata nahi naya lena hai ya purana theek karwana? Walk in karo.
           No appointment, no pressure, no upselling. Hum bata denge hum kya karenge.
@@ -182,7 +188,7 @@
           <li>Plain language, no tech jargon</li>
           <li>Costs nothing, helps a lot</li>
         </ul>
-        <a href="about.html" class="btn btn-ghost" style="margin-top: 8px;">About us →</a>
+        <a href="about.html" class="btn btn-ghost" style="margin-top: 8px;">About us â†’</a>
       </article>
     </div>
   </div>
@@ -215,7 +221,7 @@
           <span class="dot"></span>
           <div>
             <h4>Power &amp; mainboard</h4>
-            <p>Zyada-tar "dead TVs" ek ₹400 capacitor se theek ho jati hain. Pehle check karte hain.</p>
+            <p>Zyada-tar "dead TVs" ek â‚¹400 capacitor se theek ho jati hain. Pehle check karte hain.</p>
           </div>
         </div>
         <div class="showcase-item">
@@ -251,22 +257,22 @@
     <div class="values-grid">
       <div class="value reveal">
         <div class="value-mark">i.</div>
-        <h3>Warm</h3>
+        <h3 data-i18n="values.warm">Warm</h3>
         <p>Hum greet karte hain, sunte hain, naam yaad rakhte hain. Andar aana ek dost ke ghar jaise feel hota hai — showroom jaise nahi.</p>
       </div>
       <div class="value reveal">
         <div class="value-mark">ii.</div>
-        <h3>Honest</h3>
+        <h3 data-i18n="values.honest">Honest</h3>
         <p>Agar repair product ki value se zyada hai, hum seedha bol denge. Real prices, real timelines, no surprise charges at pickup.</p>
       </div>
       <div class="value reveal">
         <div class="value-mark">iii.</div>
-        <h3>Skilled</h3>
+        <h3 data-i18n="values.skilled">Skilled</h3>
         <p>Hum apna kaam jaante hain. Simply explain karte hain kyunki deeply samajhte hain — opposite nahi.</p>
       </div>
       <div class="value reveal">
         <div class="value-mark">iv.</div>
-        <h3>Dependable</h3>
+        <h3 data-i18n="values.dependable">Dependable</h3>
         <p>Jab hum Thursday bolen, matlab Thursday. Predictable, reliable, on time — har baar.</p>
       </div>
     </div>
@@ -289,7 +295,7 @@
 
     <div class="reviews-grid">
       <article class="review-card reveal">
-        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-stars" aria-label="5 stars">â˜…â˜…â˜…â˜…â˜…</div>
         <p class="review-text">
           TV ko maine likh diya tha — teen aur shops ne kaha panel gaya,
           almost naye TV ka quote diya. Tirath ji ne saamne kholke ek
@@ -303,7 +309,7 @@
       </article>
 
       <article class="review-card reveal">
-        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-stars" aria-label="5 stars">â˜…â˜…â˜…â˜…â˜…</div>
         <p class="review-text">
           Naya TV lene gaye the — har shop alag price bata raha tha.
           Tirath bhaiya ne pehle samjhaya kaunsa size theek hai humare
@@ -317,10 +323,10 @@
       </article>
 
       <article class="review-card reveal">
-        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <div class="review-stars" aria-label="5 stars">â˜…â˜…â˜…â˜…â˜…</div>
         <p class="review-text">
           AC se paani leak ho raha tha. Phone kiya — technician same
-          day aa gaya, ₹300 visit fee li, problem 2 ghante mein theek.
+          day aa gaya, â‚¹300 visit fee li, problem 2 ghante mein theek.
           Honest log hain, extra paisa nahi maange. Solid kaam,
           solid bharosa.
         </p>
@@ -410,26 +416,26 @@
         </p>
 
         <div class="visit-actions reveal">
-          <a href="https://www.google.com/maps/dir//Tirath+Electronics+LCD+LED+repair+center,+New+Guru+Nanak+market,+Bhangala,+Punjab+144306/@32.0199173,75.6079544,17z/data=!4m16!1m7!3m6!1s0x391b9b8239a84ecb:0xc5061a316b157220!2sTirath+Electronics+LCD+LED+repair+center!8m2!3d32.0199128!4d75.6105293!16s%2Fg%2F11j242d_kf!4m7!1m0!1m5!1m1!1s0x391b9b8239a84ecb:0xc5061a316b157220!2m2!1d75.6105293!2d32.0199128" target="_blank" rel="noopener" class="btn btn-cream">Get Directions</a>
+          <a href="https://www.google.com/maps/dir//Tirath+Electronics+LCD+LED+repair+center,+New+Guru+Nanak+market,+Bhangala,+Punjab+144306/@32.0199173,75.6079544,17z/data=!4m16!1m7!3m6!1s0x391b9b8239a84ecb:0xc5061a316b157220!2sTirath+Electronics+LCD+LED+repair+center!8m2!3d32.0199128!4d75.6105293!16s%2Fg%2F11j242d_kf!4m7!1m0!1m5!1m1!1s0x391b9b8239a84ecb:0xc5061a316b157220!2m2!1d75.6105293!2d32.0199128" target="_blank" rel="noopener" class="btn btn-cream" data-i18n="visit.directions">Get Directions</a>
           <a href="https://wa.me/918872177341?text=Hi%2C+Tirath+Electronics+se+baat+karni+thi" target="_blank" rel="noopener" class="btn btn-ghost-light">WhatsApp us</a>
         </div>
       </div>
 
       <div class="visit-card reveal">
         <div class="visit-row">
-          <span class="visit-label">Address</span>
+          <span class="visit-label" data-i18n="visit.address">Address</span>
           <span class="visit-value">Tirath Electronics<br>Bhangala, Mukerian<br>Hoshiarpur, Punjab — 144306</span>
         </div>
         <div class="visit-row">
-          <span class="visit-label">Hours</span>
+          <span class="visit-label" data-i18n="visit.hours">Hours</span>
           <span class="visit-value">Open every day<br>10:00 — 20:30</span>
         </div>
         <div class="visit-row">
-          <span class="visit-label">Phone</span>
+          <span class="visit-label" data-i18n="visit.phone">Phone</span>
           <span class="visit-value">+91 88721 77341<br><span style="font-size: 14px; color: var(--mint); opacity: 0.85;">Alt: +91 94179 88748</span></span>
         </div>
         <div class="visit-row">
-          <span class="visit-label">Email</span>
+          <span class="visit-label" data-i18n="visit.email">Email</span>
           <span class="visit-value">tirathelectronics@gmail.com</span>
         </div>
       </div>
@@ -449,7 +455,7 @@
             <div class="footer-sub">Sales &amp; Repairs · Bhangala, Mukerian</div>
           </div>
         </div>
-        <p class="footer-tagline">Honest service. Trusted repairs. The shop your neighbourhood actually recommends.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Honest service. Trusted repairs. The shop your neighbourhood actually recommends.</p>
         <p class="footer-address">
           Bhangala, Mukerian<br>
           Hoshiarpur, Punjab — 144306
@@ -457,29 +463,29 @@
       </div>
 
       <div class="footer-col">
-        <h4>Sitemap</h4>
+        <h4 data-i18n="footer.sitemap">Sitemap</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="repairs.html">Repairs</a></li>
-          <li><a href="about.html">About &amp; Visit</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="repairs.html" data-i18n="nav.repairs">Repairs</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="tel:+918872177341">+91 88721 77341</a></li>
           <li><a href="tel:+919417988748">+91 94179 88748 <span style="opacity:0.6; font-size: 12px;">(alt)</span></a></li>
-          <li><a href="https://wa.me/918872177341" target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a href="https://wa.me/918872177341" target="_blank" rel="noopener"><span data-i18n="footer.waBtn">WhatsApp us</span></a></li>
           <li><a href="mailto:tirathelectronics@gmail.com">tirathelectronics@gmail.com</a></li>
-          <li>Open every day · 10:00 — 20:30</li>
+          <li data-i18n="footer.hours">Open every day · 10:00 — 20:30</li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 Tirath Electronics · Built with care in Mukerian.</span>
+      <span data-i18n="footer.copyright">© 2026 Tirath Electronics · Built with care in Mukerian.</span>
       <span>The shop your neighbourhood actually recommends.</span>
     </div>
   </div>
@@ -490,6 +496,7 @@
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.9 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.2zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C3.9 14.7 3.5 13.4 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
 </a>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
