@@ -349,17 +349,13 @@
   <div class="container">
     <div class="queries-grid">
       <div class="queries-text reveal">
-        <div class="section-num">05 — Koi query?</div>
+        <div class="section-num" data-i18n="queries.num">05 — Koi query?</div>
         <h2 class="section-title">
           Pooch lo —<br><span class="ital">free hai.</span>
         </h2>
-        <p class="lead" style="margin-bottom: 24px;">
-          Repair, purchase, warranty, delivery, installation — kuch bhi
-          question ho, hum reply karte hain. WhatsApp pe jawaab milta hai
-          aksar 30 minute mein.
-        </p>
+        <p class="lead" style="margin-bottom: 24px;" data-i18n="queries.lead">Repair, purchase, warranty, delivery, installation — kuch bhi question ho, hum reply karte hain. WhatsApp pe jawaab milta hai aksar 30 minute mein.</p>
         <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 19px; color: var(--forest); line-height: 1.5;">
-          "Koi sawaal chhota nahi hota — agar aap pooch rahe ho, matlab zaroori hai."
+          <span data-i18n="queries.quote">"Koi sawaal chhota nahi hota — agar aap pooch rahe ho, matlab zaroori hai."</span>
         </p>
       </div>
 
@@ -372,21 +368,21 @@
         </p>
         <form id="queryForm" class="js-wa-form" novalidate>
           <div class="form-row">
-            <label for="qf-name">Aapka naam</label>
+            <label for="qf-name" data-i18n="form.name">Aapka naam</label>
             <input type="text" id="qf-name" name="name" placeholder="e.g. Jaskaran Singh" required autocomplete="name">
           </div>
           <div class="form-row-split">
             <div class="form-row">
-              <label for="qf-phone">Phone</label>
+              <label for="qf-phone" data-i18n="form.phone">Phone</label>
               <input type="tel" id="qf-phone" name="phone" placeholder="+91 ..." required autocomplete="tel">
             </div>
             <div class="form-row">
-              <label for="qf-email">Email</label>
+              <label for="qf-email" data-i18n="form.email">Email</label>
               <input type="email" id="qf-email" name="email" placeholder="aap@example.com" required autocomplete="email">
             </div>
           </div>
           <div class="form-row">
-            <label for="qf-query">Aapki query</label>
+            <label for="qf-query" data-i18n="queries.formLabel">Aapki query</label>
             <textarea id="qf-query" name="query" placeholder="e.g. Naya AC lena hai, kaunsa best hoga 1.5 ton mein?" required></textarea>
           </div>
           <button type="submit" class="btn btn-whatsapp">

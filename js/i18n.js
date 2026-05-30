@@ -26,7 +26,38 @@
       about: {
         pageEyebrow: '— About us',
         pageTitle1: 'The shop, the man,', pageTitle2pre: 'the', pageTitle2i: '40+ years.',
-        pageSub: 'Tirath Electronics ki kahani simple hai — ek aadmi, ek kasam, char dahaiyan. Honest service, trusted repairs, and the warmth of a neighbourhood that knows your name.'
+        pageSub: 'Tirath Electronics ki kahani simple hai — ek aadmi, ek kasam, char dahaiyan. Honest service, trusted repairs, and the warmth of a neighbourhood that knows your name.',
+        brandStoryNum: '01 — Brand story',
+        howWeWorkNum: '02 — How we work',
+        founderEyebrow: '— Meet the man behind the shop',
+        founderRole: 'Owner · CEO · Master Technician · 40+ years',
+        traitTrusted: 'Trusted', traitFriendly: 'Friendly', trait40: '40+ years experience'
+      },
+      repairs: {
+        pageEyebrow: '— Repairs & Service',
+        pageTitle1: 'Kuch bhi kharab?', pageTitle2: 'Le aao.',
+        pageSub: 'TVs, ACs, microwaves, sound systems, appliances — humne sab kuch khola hai. Free diagnostic, honest quote, no surprise charges. 40+ saal ka tajurba.',
+        heroVideo: 'Send a video', heroWA: 'WhatsApp for quote',
+        cgNum: '01 — Common problems we fix',
+        cgTV: 'Television', cgAC: 'Air Conditioner', cgMW: 'Microwave Oven',
+        cgSound: 'Sound Systems', cgKitchen: 'Kitchen Appliances', cgHome: 'Home Appliances',
+        expressBadge: '⚡ Express service · Quick access',
+        expressBookBtn: 'Book home visit',
+        sendVideoEyebrow: '— Easiest way to get a quote',
+        processNum: '03 — Process',
+        step1Title: 'Le aao ya WhatsApp karo',
+        step2Title: 'Free diagnostic',
+        step3Title: 'Aap decide karo',
+        step4Title: 'Bole hue din pe ready',
+        brandsLabel: 'All major brands · We service everything'
+      },
+      products: {
+        pageEyebrow: '— Catalogue', pageTitle1: 'Asli quality.', pageTitle2: 'Theek prices.',
+        pageSub: 'Hand-picked TVs, ACs, microwaves, sound systems aur appliances — sab kuch jo ghar mein chahiye. WhatsApp karo apni pasand ka product, hum best price denge.',
+        heroWA: 'WhatsApp the shop', heroRepair: 'Need a repair instead?',
+        catAll: 'All products', catTV: 'Televisions', catAC: 'Air Conditioners',
+        catMW: 'Microwaves', catSound: 'Sound systems', catApp: 'Appliances', catAcc: 'Accessories',
+        brandsLabel: 'All major brands · sales aur repairs dono'
       },
       nav: {
         home: 'Home', products: 'Products', repairs: 'Repairs',
@@ -85,6 +116,12 @@
         ctaText: 'Hum se kuch khareeda ya repair karaya? Apni review WhatsApp pe bhej do.',
         ctaBtn: 'Leave a review on WhatsApp'
       },
+      queries: {
+        num: '05 — Koi query?',
+        lead: 'Repair, purchase, warranty, delivery, installation — kuch bhi question ho, hum reply karte hain. WhatsApp pe jawaab milta hai aksar 30 minute mein.',
+        quote: '"Koi sawaal chhota nahi hota — agar aap pooch rahe ho, matlab zaroori hai."',
+        formLabel: 'Aapki query'
+      },
       visit: {
         num: '06 — Aa jao milne',
         title1: 'Dhoondhne mein aasaan,', title2: 'mushkil.',
@@ -109,18 +146,42 @@
         pageSub: 'Hand-picked TVs, ACs, microwaves, sound systems and appliances — everything you need at home. WhatsApp us for the best price on what you want.',
         heroWA: 'WhatsApp the shop', heroRepair: 'Need a repair instead?',
         catAll: 'All products', catTV: 'Televisions', catAC: 'Air Conditioners',
-        catMW: 'Microwaves', catSound: 'Sound systems', catApp: 'Appliances', catAcc: 'Accessories'
+        catMW: 'Microwaves', catSound: 'Sound systems', catApp: 'Appliances', catAcc: 'Accessories',
+        brandsLabel: 'All major brands · sales and repairs'
       },
       repairs: {
         pageEyebrow: '— Repairs & Service',
         pageTitle1: 'Something broken?', pageTitle2: 'Bring it in.',
         pageSub: 'TVs, ACs, microwaves, sound systems, appliances — we have opened them all. Free diagnostic, honest quote, no surprise charges. 40+ years of experience.',
-        heroVideo: 'Send a video', heroWA: 'WhatsApp for quote'
+        heroVideo: 'Send a video', heroWA: 'WhatsApp for quote',
+        cgNum: '01 — Common problems we fix',
+        cgTV: 'Television', cgAC: 'Air Conditioner', cgMW: 'Microwave Oven',
+        cgSound: 'Sound Systems', cgKitchen: 'Kitchen Appliances', cgHome: 'Home Appliances',
+        expressBadge: '⚡ Express service · Quick access',
+        expressBookBtn: 'Book home visit',
+        sendVideoEyebrow: '— The easiest way to get a quote',
+        processNum: '03 — Process',
+        step1Title: 'Bring it in or WhatsApp us',
+        step2Title: 'Free diagnostic',
+        step3Title: 'You decide',
+        step4Title: 'Ready by the promised day',
+        brandsLabel: 'All major brands · we service everything'
       },
       about: {
         pageEyebrow: '— About us',
         pageTitle1: 'The shop, the man,', pageTitle2pre: 'the', pageTitle2i: '40+ years.',
-        pageSub: 'The Tirath Electronics story is simple — one man, one promise, four decades. Honest service, trusted repairs, and the warmth of a neighbourhood that knows your name.'
+        pageSub: 'The Tirath Electronics story is simple — one man, one promise, four decades. Honest service, trusted repairs, and the warmth of a neighbourhood that knows your name.',
+        brandStoryNum: '01 — Brand story',
+        howWeWorkNum: '02 — How we work',
+        founderEyebrow: '— Meet the man behind the shop',
+        founderRole: 'Owner · CEO · Master Technician · 40+ years',
+        traitTrusted: 'Trusted', traitFriendly: 'Friendly', trait40: '40+ years experience'
+      },
+      queries: {
+        num: '05 — Got a question?',
+        lead: 'Repairs, purchase, warranty, delivery, installation — whatever you want to ask, we reply. On WhatsApp you usually hear back within 30 minutes.',
+        quote: '"No question is too small — if you are asking, it matters."',
+        formLabel: 'Your question'
       },
       nav: { home: 'Home', products: 'Products', repairs: 'Repairs', about: 'About', call: 'Call shop' },
       promo: { tag: 'Special offer', head: "You'll get a discount", sub: 'on your purchase —', cta: 'Claim on WhatsApp →' },
@@ -197,18 +258,42 @@
         pageSub: 'चुनिंदा TV, AC, माइक्रोवेव, साउंड सिस्टम और घरेलू सामान — घर की हर ज़रूरत। अपनी पसंद का प्रोडक्ट व्हाट्सएप करें, हम सबसे अच्छा दाम देंगे।',
         heroWA: 'दुकान को व्हाट्सएप करें', heroRepair: 'मरम्मत चाहिए?',
         catAll: 'सभी उत्पाद', catTV: 'टेलीविज़न', catAC: 'एयर कंडीशनर',
-        catMW: 'माइक्रोवेव', catSound: 'साउंड सिस्टम', catApp: 'घरेलू सामान', catAcc: 'एक्सेसरीज़'
+        catMW: 'माइक्रोवेव', catSound: 'साउंड सिस्टम', catApp: 'घरेलू सामान', catAcc: 'एक्सेसरीज़',
+        brandsLabel: 'सभी बड़े ब्रांड · बिक्री और मरम्मत दोनों'
       },
       repairs: {
         pageEyebrow: '— मरम्मत और सेवा',
         pageTitle1: 'कुछ खराब है?', pageTitle2: 'ले आओ।',
         pageSub: 'TV, AC, माइक्रोवेव, साउंड सिस्टम, घरेलू सामान — हमने सब कुछ खोला है। फ्री डायग्नोस्टिक, ईमानदार कोट, कोई छुपा चार्ज नहीं। 40+ साल का तजुर्बा।',
-        heroVideo: 'वीडियो भेजें', heroWA: 'कोट के लिए व्हाट्सएप करें'
+        heroVideo: 'वीडियो भेजें', heroWA: 'कोट के लिए व्हाट्सएप करें',
+        cgNum: '01 — आम समस्याएँ जो हम ठीक करते हैं',
+        cgTV: 'टेलीविज़न', cgAC: 'एयर कंडीशनर', cgMW: 'माइक्रोवेव ओवन',
+        cgSound: 'साउंड सिस्टम', cgKitchen: 'रसोई के उपकरण', cgHome: 'घरेलू उपकरण',
+        expressBadge: '⚡ एक्सप्रेस सेवा · तुरंत मदद',
+        expressBookBtn: 'होम विज़िट बुक करें',
+        sendVideoEyebrow: '— कोट पाने का सबसे आसान तरीका',
+        processNum: '03 — प्रक्रिया',
+        step1Title: 'ले आओ या व्हाट्सएप करो',
+        step2Title: 'फ्री डायग्नोस्टिक',
+        step3Title: 'आप फैसला करें',
+        step4Title: 'बताए दिन तक तैयार',
+        brandsLabel: 'सभी बड़े ब्रांड · हम सब कुछ ठीक करते हैं'
       },
       about: {
         pageEyebrow: '— हमारे बारे में',
         pageTitle1: 'दुकान, इंसान,', pageTitle2pre: 'और', pageTitle2i: '40+ साल।',
-        pageSub: 'तीरथ इलेक्ट्रॉनिक्स की कहानी सरल है — एक इंसान, एक वादा, चार दशक। ईमानदार सेवा, भरोसेमंद मरम्मत, और मोहल्ले का वो अपनापन जहाँ आपको नाम से जानते हैं।'
+        pageSub: 'तीरथ इलेक्ट्रॉनिक्स की कहानी सरल है — एक इंसान, एक वादा, चार दशक। ईमानदार सेवा, भरोसेमंद मरम्मत, और मोहल्ले का वो अपनापन जहाँ आपको नाम से जानते हैं।',
+        brandStoryNum: '01 — ब्रांड स्टोरी',
+        howWeWorkNum: '02 — हम कैसे काम करते हैं',
+        founderEyebrow: '— दुकान चलाने वाले इंसान से मिलिए',
+        founderRole: 'मालिक · CEO · मास्टर तकनीशियन · 40+ साल',
+        traitTrusted: 'भरोसेमंद', traitFriendly: 'मिलनसार', trait40: '40+ साल का तजुर्बा'
+      },
+      queries: {
+        num: '05 — कोई सवाल है?',
+        lead: 'मरम्मत, खरीदारी, वारंटी, डिलीवरी, इंस्टॉलेशन — कुछ भी पूछना हो, हम जवाब देते हैं। व्हाट्सएप पर अक्सर 30 मिनट के अंदर जवाब मिल जाता है।',
+        quote: '"कोई सवाल छोटा नहीं होता — अगर आप पूछ रहे हैं, तो ज़रूरी ज़रूर है।"',
+        formLabel: 'आपका सवाल'
       },
       nav: { home: 'होम', products: 'उत्पाद', repairs: 'मरम्मत', about: 'हमारे बारे में', call: 'कॉल करें' },
       promo: { tag: 'विशेष ऑफर', head: 'आपको छूट मिलेगी', sub: 'अपनी खरीदारी पर —', cta: 'व्हाट्सएप पर पाएं →' },
@@ -285,18 +370,42 @@
         pageSub: 'ਚੁਣੇ ਹੋਏ TV, AC, ਮਾਈਕ੍ਰੋਵੇਵ, ਸਾਊਂਡ ਸਿਸਟਮ ਅਤੇ ਘਰੇਲੂ ਸਮਾਨ — ਘਰ ਦੀ ਹਰ ਲੋੜ। ਆਪਣੀ ਪਸੰਦ ਦਾ ਪ੍ਰੋਡਕਟ ਵਟਸਐਪ ਕਰੋ, ਅਸੀਂ ਸਭ ਤੋਂ ਵਧੀਆ ਕੀਮਤ ਦੇਵਾਂਗੇ।',
         heroWA: 'ਦੁਕਾਨ ਨੂੰ ਵਟਸਐਪ ਕਰੋ', heroRepair: 'ਮੁਰੰਮਤ ਚਾਹੀਦੀ ਹੈ?',
         catAll: 'ਸਾਰੇ ਉਤਪਾਦ', catTV: 'ਟੈਲੀਵਿਜ਼ਨ', catAC: 'ਏਅਰ ਕੰਡੀਸ਼ਨਰ',
-        catMW: 'ਮਾਈਕ੍ਰੋਵੇਵ', catSound: 'ਸਾਊਂਡ ਸਿਸਟਮ', catApp: 'ਘਰੇਲੂ ਸਮਾਨ', catAcc: 'ਐਕਸੈਸਰੀਜ਼'
+        catMW: 'ਮਾਈਕ੍ਰੋਵੇਵ', catSound: 'ਸਾਊਂਡ ਸਿਸਟਮ', catApp: 'ਘਰੇਲੂ ਸਮਾਨ', catAcc: 'ਐਕਸੈਸਰੀਜ਼',
+        brandsLabel: 'ਸਾਰੇ ਵੱਡੇ ਬ੍ਰਾਂਡ · ਵਿਕਰੀ ਅਤੇ ਮੁਰੰਮਤ ਦੋਵੇਂ'
       },
       repairs: {
         pageEyebrow: '— ਮੁਰੰਮਤ ਅਤੇ ਸੇਵਾ',
         pageTitle1: 'ਕੁਝ ਖਰਾਬ ਹੈ?', pageTitle2: 'ਲੈ ਆਓ।',
         pageSub: 'TV, AC, ਮਾਈਕ੍ਰੋਵੇਵ, ਸਾਊਂਡ ਸਿਸਟਮ, ਘਰੇਲੂ ਸਮਾਨ — ਅਸੀਂ ਸਭ ਕੁਝ ਖੋਲ੍ਹਿਆ ਹੈ। ਫ੍ਰੀ ਡਾਇਗਨੋਸਟਿਕ, ਇਮਾਨਦਾਰ ਕੋਟ, ਕੋਈ ਛੁਪਿਆ ਚਾਰਜ ਨਹੀਂ। 40+ ਸਾਲ ਦਾ ਤਜ਼ਰਬਾ।',
-        heroVideo: 'ਵੀਡੀਓ ਭੇਜੋ', heroWA: 'ਕੋਟ ਲਈ ਵਟਸਐਪ ਕਰੋ'
+        heroVideo: 'ਵੀਡੀਓ ਭੇਜੋ', heroWA: 'ਕੋਟ ਲਈ ਵਟਸਐਪ ਕਰੋ',
+        cgNum: '01 — ਆਮ ਸਮੱਸਿਆਵਾਂ ਜੋ ਅਸੀਂ ਠੀਕ ਕਰਦੇ ਹਾਂ',
+        cgTV: 'ਟੈਲੀਵਿਜ਼ਨ', cgAC: 'ਏਅਰ ਕੰਡੀਸ਼ਨਰ', cgMW: 'ਮਾਈਕ੍ਰੋਵੇਵ ਓਵਨ',
+        cgSound: 'ਸਾਊਂਡ ਸਿਸਟਮ', cgKitchen: 'ਰਸੋਈ ਦੇ ਉਪਕਰਣ', cgHome: 'ਘਰੇਲੂ ਉਪਕਰਣ',
+        expressBadge: '⚡ ਐਕਸਪ੍ਰੈਸ ਸੇਵਾ · ਤੁਰੰਤ ਮਦਦ',
+        expressBookBtn: 'ਹੋਮ ਵਿਜ਼ਿਟ ਬੁੱਕ ਕਰੋ',
+        sendVideoEyebrow: '— ਕੋਟ ਲੈਣ ਦਾ ਸਭ ਤੋਂ ਆਸਾਨ ਤਰੀਕਾ',
+        processNum: '03 — ਪ੍ਰਕਿਰਿਆ',
+        step1Title: 'ਲੈ ਆਓ ਜਾਂ ਵਟਸਐਪ ਕਰੋ',
+        step2Title: 'ਫ੍ਰੀ ਡਾਇਗਨੋਸਟਿਕ',
+        step3Title: 'ਤੁਸੀਂ ਫੈਸਲਾ ਕਰੋ',
+        step4Title: 'ਦੱਸੇ ਦਿਨ ਤੱਕ ਤਿਆਰ',
+        brandsLabel: 'ਸਾਰੇ ਵੱਡੇ ਬ੍ਰਾਂਡ · ਅਸੀਂ ਸਭ ਕੁਝ ਠੀਕ ਕਰਦੇ ਹਾਂ'
       },
       about: {
         pageEyebrow: '— ਸਾਡੇ ਬਾਰੇ',
         pageTitle1: 'ਦੁਕਾਨ, ਇਨਸਾਨ,', pageTitle2pre: 'ਅਤੇ', pageTitle2i: '40+ ਸਾਲ।',
-        pageSub: 'ਤੀਰਥ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੀ ਕਹਾਣੀ ਸਿੱਧੀ ਹੈ — ਇੱਕ ਇਨਸਾਨ, ਇੱਕ ਵਾਅਦਾ, ਚਾਰ ਦਹਾਕੇ। ਇਮਾਨਦਾਰ ਸੇਵਾ, ਭਰੋਸੇਮੰਦ ਮੁਰੰਮਤ, ਅਤੇ ਉਹ ਮੁਹੱਲੇ ਦਾ ਨਿੱਘ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਨਾਮ ਤੋਂ ਜਾਣਦੇ ਹਨ।'
+        pageSub: 'ਤੀਰਥ ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਦੀ ਕਹਾਣੀ ਸਿੱਧੀ ਹੈ — ਇੱਕ ਇਨਸਾਨ, ਇੱਕ ਵਾਅਦਾ, ਚਾਰ ਦਹਾਕੇ। ਇਮਾਨਦਾਰ ਸੇਵਾ, ਭਰੋਸੇਮੰਦ ਮੁਰੰਮਤ, ਅਤੇ ਉਹ ਮੁਹੱਲੇ ਦਾ ਨਿੱਘ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਨਾਮ ਤੋਂ ਜਾਣਦੇ ਹਨ।',
+        brandStoryNum: '01 — ਬ੍ਰਾਂਡ ਕਹਾਣੀ',
+        howWeWorkNum: '02 — ਅਸੀਂ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਾਂ',
+        founderEyebrow: '— ਦੁਕਾਨ ਚਲਾਉਣ ਵਾਲੇ ਇਨਸਾਨ ਨੂੰ ਮਿਲੋ',
+        founderRole: 'ਮਾਲਕ · CEO · ਮਾਸਟਰ ਟੈਕਨੀਸ਼ੀਅਨ · 40+ ਸਾਲ',
+        traitTrusted: 'ਭਰੋਸੇਮੰਦ', traitFriendly: 'ਮਿਲਣਸਾਰ', trait40: '40+ ਸਾਲ ਦਾ ਤਜ਼ਰਬਾ'
+      },
+      queries: {
+        num: '05 — ਕੋਈ ਸਵਾਲ ਹੈ?',
+        lead: 'ਮੁਰੰਮਤ, ਖਰੀਦਦਾਰੀ, ਵਾਰੰਟੀ, ਡਿਲੀਵਰੀ, ਇੰਸਟਾਲੇਸ਼ਨ — ਕੁਝ ਵੀ ਪੁੱਛਣਾ ਹੋਵੇ, ਅਸੀਂ ਜਵਾਬ ਦਿੰਦੇ ਹਾਂ। ਵਟਸਐਪ ’ਤੇ ਅਕਸਰ 30 ਮਿੰਟ ਵਿੱਚ ਜਵਾਬ ਮਿਲ ਜਾਂਦਾ ਹੈ।',
+        quote: '"ਕੋਈ ਸਵਾਲ ਛੋਟਾ ਨਹੀਂ ਹੁੰਦਾ — ਜੇ ਤੁਸੀਂ ਪੁੱਛ ਰਹੇ ਹੋ, ਮਤਲਬ ਜ਼ਰੂਰੀ ਹੈ।"',
+        formLabel: 'ਤੁਹਾਡਾ ਸਵਾਲ'
       },
       nav: { home: 'ਹੋਮ', products: 'ਉਤਪਾਦ', repairs: 'ਮੁਰੰਮਤ', about: 'ਸਾਡੇ ਬਾਰੇ', call: 'ਕਾਲ ਕਰੋ' },
       promo: { tag: 'ਖਾਸ ਆਫਰ', head: 'ਤੁਹਾਨੂੰ ਛੋਟ ਮਿਲੇਗੀ', sub: 'ਆਪਣੀ ਖਰੀਦਦਾਰੀ ’ਤੇ —', cta: 'ਵਟਸਐਪ ’ਤੇ ਪਾਓ →' },
