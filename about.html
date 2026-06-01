@@ -141,8 +141,16 @@
   }
   @media (max-width: 1024px) {
     .founder-card { grid-template-columns: 1fr; gap: 40px; padding: 40px 32px; }
-    .founder-portrait { max-width: 320px; margin: 0 auto; }
+    /* Fallback height so the portrait never collapses on phones that
+       don't honour aspect-ratio — otherwise the owner photo gets clipped away. */
+    .founder-portrait { max-width: 320px; margin: 0 auto; aspect-ratio: 4 / 5; min-height: 380px; }
     .founder-monogram { font-size: 160px; }
+  }
+  /* Extra safety: on phones, anchor the photo into normal flow as well */
+  @media (max-width: 640px) {
+    .founder-portrait { aspect-ratio: auto; min-height: 0; }
+    .founder-photo { position: relative; width: 100%; height: auto; }
+    .founder-monogram, .founder-monogram-sub { display: none; }
   }
 </style>
 </head>
@@ -171,6 +179,10 @@
       <a href="products.html" data-i18n="nav.products">Products</a>
       <a href="repairs.html" data-i18n="nav.repairs">Repairs</a>
       <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScd98NNWiugzcHl8fE3AoWv8cqUITeEQhiaH_KkHSIbRKSTuQ/viewform" target="_blank" rel="noopener" class="nav-cta nav-cta-form" aria-label="Enquiry form">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
+        <span data-i18n="nav.form">Enquiry form</span>
+      </a>
       <a href="tel:+918872177341" class="nav-cta" data-i18n="nav.call">Call shop</a>
       <div class="lang-switcher" role="group" aria-label="Language">
         <button type="button" class="lang-btn" data-lang="pa">ਪੰਜਾਬੀ</button>

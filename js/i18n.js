@@ -61,7 +61,7 @@
       },
       nav: {
         home: 'Home', products: 'Products', repairs: 'Repairs',
-        about: 'About', call: 'Call shop'
+        about: 'About', call: 'Call shop', form: 'Enquiry form'
       },
       promo: {
         tag: 'Special offer', head: "You'll get a discount",
@@ -183,7 +183,7 @@
         quote: '"No question is too small — if you are asking, it matters."',
         formLabel: 'Your question'
       },
-      nav: { home: 'Home', products: 'Products', repairs: 'Repairs', about: 'About', call: 'Call shop' },
+      nav: { home: 'Home', products: 'Products', repairs: 'Repairs', about: 'About', call: 'Call shop', form: 'Enquiry form' },
       promo: { tag: 'Special offer', head: "You'll get a discount", sub: 'on your purchase —', cta: 'Claim on WhatsApp →' },
       hero: {
         eyebrow: '— Bhangala, Mukerian · 40+ years strong',
@@ -295,7 +295,7 @@
         quote: '"कोई सवाल छोटा नहीं होता — अगर आप पूछ रहे हैं, तो ज़रूरी ज़रूर है।"',
         formLabel: 'आपका सवाल'
       },
-      nav: { home: 'होम', products: 'उत्पाद', repairs: 'मरम्मत', about: 'हमारे बारे में', call: 'कॉल करें' },
+      nav: { home: 'होम', products: 'उत्पाद', repairs: 'मरम्मत', about: 'हमारे बारे में', call: 'कॉल करें', form: 'फ़ॉर्म भरें' },
       promo: { tag: 'विशेष ऑफर', head: 'आपको छूट मिलेगी', sub: 'अपनी खरीदारी पर —', cta: 'व्हाट्सएप पर पाएं →' },
       hero: {
         eyebrow: '— भंगाला, मुकेरियाँ · 40+ साल से',
@@ -407,7 +407,7 @@
         quote: '"ਕੋਈ ਸਵਾਲ ਛੋਟਾ ਨਹੀਂ ਹੁੰਦਾ — ਜੇ ਤੁਸੀਂ ਪੁੱਛ ਰਹੇ ਹੋ, ਮਤਲਬ ਜ਼ਰੂਰੀ ਹੈ।"',
         formLabel: 'ਤੁਹਾਡਾ ਸਵਾਲ'
       },
-      nav: { home: 'ਹੋਮ', products: 'ਉਤਪਾਦ', repairs: 'ਮੁਰੰਮਤ', about: 'ਸਾਡੇ ਬਾਰੇ', call: 'ਕਾਲ ਕਰੋ' },
+      nav: { home: 'ਹੋਮ', products: 'ਉਤਪਾਦ', repairs: 'ਮੁਰੰਮਤ', about: 'ਸਾਡੇ ਬਾਰੇ', call: 'ਕਾਲ ਕਰੋ', form: 'ਫਾਰਮ ਭਰੋ' },
       promo: { tag: 'ਖਾਸ ਆਫਰ', head: 'ਤੁਹਾਨੂੰ ਛੋਟ ਮਿਲੇਗੀ', sub: 'ਆਪਣੀ ਖਰੀਦਦਾਰੀ ’ਤੇ —', cta: 'ਵਟਸਐਪ ’ਤੇ ਪਾਓ →' },
       hero: {
         eyebrow: '— ਭੰਗਾਲਾ, ਮੁਕੇਰੀਆਂ · 40+ ਸਾਲਾਂ ਤੋਂ',

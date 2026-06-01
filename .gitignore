@@ -30,3 +30,6 @@ build/
 Screenshot *.png
 Screenshot *.jpg
 *.tmp
+
+# Local full-res photo backup (compressed version is committed)
+images/*-original.jpg
